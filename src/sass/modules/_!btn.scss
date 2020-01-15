@@ -1,0 +1,92 @@
+.btn {
+    display: inline-flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	padding: 15rem;
+	border-radius: 20px;
+	
+	&_fill {
+		background: $blue;
+		color: #fff;
+	}
+	
+	&_stroke {
+		background: transparent;
+		color: $blue;
+		border: 1px solid $blue;
+	}
+	
+	&_small {
+		height: 60rem;
+		font-size: 14rem;
+		font-weight: 500;
+	}
+	
+	&_big {
+		height: 80rem;
+		font-weight: bold;
+		font-size: 16rem;
+	}
+	
+	&__icon-docs {
+		width: 27rem;
+		height: 32rem;
+		fill: #fff;
+		margin-left: 40rem;
+	}
+	
+	&__icon-restore {
+		width: 33rem;
+		height: 33rem;
+		fill: $blue;
+		margin-left: 38rem;
+	}
+}
+
+.btn-round {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 316rem;
+	height: 316rem;
+	text-align: center;
+	background: $blue;
+	color: #fff;
+	border-radius: 100%;
+	&__line {
+		position: absolute;
+		left: 27rem;
+		top: 27rem;
+		display: block;
+		width: 259.66rem;
+		height: 263rem;
+		svg {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+		path {
+			fill: none;
+			stroke: #fff;
+			stroke-width: 1px;
+			fill-rule: evenodd;
+			opacity: 0.3;
+		}
+	}
+	&__text {
+		font-size: 20rem;
+		line-height: (28/20)*1;
+		font-weight: 600;
+	}
+}
+
+@include max-screen($large_mobile) {
+	.btn {
+		&_big {
+			height: 75px;
+			font-size: 14px;
+		}
+	}
+}

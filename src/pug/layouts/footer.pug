@@ -1,0 +1,47 @@
++b.FOOTER.footer#contact
+	+e.wrap.wrap
+		+e.top.flex._justify._vertical
+			+e.top-left
+				+e.H2.title.h1 Контакты
+				+e.desc ООО «Веритас страхование»
+				+e.list
+					+e.item
+						+e.item-left Адрес:
+						+e.item-right
+							| Санкт-Петербург, ул. Белоостровская, 
+							br
+							| д 17, к 2, лит А, БЦ "Avantage", офис 807
+					+e.item
+						+e.item-left Телефон:
+						+e.item-right
+							| +7 900 622-96-75
+					+e.item
+						+e.item-left Email:
+						+e.item-right
+							a(href="mailto:info@veritas-ins.ru") info@veritas-ins.ru
+			+e.top-right
+				+e.IMG.dots(src="/img/footer__dots.png")
+				+e.map-wrap
+					+e.IMG.map-img(src="/img/map.jpg")
+					+e.map#map
+	+e.bottom
+		.wrap
+			+e.row.flex
+				+e.left
+					+e.A.logo
+						+e.IMG.logo-pic(src="/img/logo.png")
+						+e.SPAN.logo-text страхование
+				+e.right
+					+e.NAV.nav.flex
+						+e.A.link(href="#") Расчет
+						+e.A.link.js-scroll-to(href="#scam") Обман
+						+e.A.link.js-scroll-to(href="#car") Машина
+						+e.A.link.js-scroll-to(href="#kasko") Каско
+						+e.A.link.js-scroll-to(href="#contact") Контакты
+			+e.row.flex_vertical
+				+e.left
+					+e.copyright © Все права защищены 2019 г.
+				+e.right.flex._justify.vertical
+					+e.A.polity(href="#") Политика конфиденциальности
+					+e.A.develop(href="http://karanikola.ru",target="_blank")
+						| Дизайн и разработка - Karanikola

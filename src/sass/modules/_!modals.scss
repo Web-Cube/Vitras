@@ -1,0 +1,98 @@
+
+.mfp-bg{
+	background-color: rgb(0, 0, 0);
+	opacity: 0.502;	
+}
+
+.mfp-wrap {
+	overflow-x: hidden;
+	overflow-y: auto !important;
+}
+
+.modals{
+	position: relative;
+	margin: auto;
+	width: 100%;
+	padding: 15px 15px 15px 75rem;
+	max-width: 1400px;
+	background-color: #fff;
+	cursor: auto!important;	
+	font-size: 15rem;
+	&__close{
+		cursor: pointer;
+		font-size: 16px;
+		width: toem(112);
+		height: toem(112);
+		position: absolute;
+		right: 0;
+		top: 0;
+		background: #FAFAFA;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		.icon {
+			width: toem(42);
+		}
+	}
+	
+	@include max-screen($large_desktop) {
+		max-width: 1200px;
+		&__close {
+			font-size: 14px;
+		}
+	}
+}
+.mfp-content, .mfp-bg, .mfp-container{
+	cursor: url('/app/img/close.png') 16 16, auto!important;
+    font-size: 16px;
+}
+.mfp-bg{
+	opacity: 0;
+	transition: all .5s ease; 
+	
+
+
+	&.mfp-ready{
+		opacity: 0.502;	
+	}
+
+	&.mfp-removing{
+		opacity: 0;
+	}
+}
+
+.css-modal-animate{
+	// start state
+	
+	overflow: hidden;
+
+	.modals, .mfp-figure{
+		transition: all .5s ease; 
+		opacity: 0;
+		transform: translateY(30px);
+	}
+
+	// animate in
+	&.mfp-ready{
+		.modals, .mfp-figure{
+			transform: translate(0, 0);
+			opacity: 1;
+		}
+	}
+
+	// animate out
+	&.mfp-removing{	
+		.modals, .mfp-figure{
+			opacity: 0;
+		}
+	}
+
+}
+@include max-screen($large_mobile) {
+	.modals {
+		&__close {
+			width: 60px;
+			height: 60px;
+		}
+	}
+}

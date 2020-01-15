@@ -1,0 +1,21 @@
+<svg id="arrow-left.svg" xmlns="http://www.w3.org/2000/svg" width="15.5" height="14" viewBox="0 0 15.5 14">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #fff;
+      }
+
+      .cls-1 {
+        stroke-width: 1px;
+      }
+
+      .cls-2 {
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="Прямоугольник_9_копия" data-name="first" class="cls-1" x="3" y="6" width="12" height="2"/>
+  <path id="Прямоугольник_10_копия" data-name="last" class="cls-2" d="M1443,1102l-6.01-6,6.01-6.01" transform="translate(-1436 -1089)"/>
+</svg>

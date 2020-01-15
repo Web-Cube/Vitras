@@ -1,0 +1,64 @@
+
+.content p,.p,
+.content li, .li{
+	font-size: 16rem;
+	line-height: (24/16)*1;
+}
+
+.content ul, .content ol{
+
+}
+
+.content b,.b{
+}
+
+.content a,.a{
+
+}
+
+.h1, .content h1,
+.h2, .content h2,
+.h4, .content h4,
+.h5, .content h5,
+.h6, .content h6,{
+	font-weight: normal;
+}
+
+.h1, .content h1{
+	font-size: 80rem;
+	line-height: (82/80)*1;
+}
+
+.h2, .content h2{
+	font-size: 45rem;
+	line-height: (48/45)*1;
+}
+
+.h3, .content h3{
+	font-size: 20rem;
+	font-weight: bold;
+	line-height: (28/20)*1;
+}
+
+.h4, .content h4{
+	font-size: 18rem;
+	font-weight: bold;
+	line-height: (32/18)*1;
+}
+
+.h5, .content h5{
+}
+
+
+.h6, .content h6{
+}	
+
+@include max-screen($large_mobile) {
+	.h2, .content h2{
+		font-size: 26px;
+		line-height: 30px;
+	}
+	.h4, .content h4{
+		font-size: 14px;
+	}
+}

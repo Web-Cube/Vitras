@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2e2eff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="restoe.svg" class="cls-1" d="M1188.5,2535.18a15.489,15.489,0,0,1,15.32,15.31H1205a16.514,16.514,0,1,0-2.69,9.03v3.73h1.03v-5.9h-5.9v1.03h4.19A15.317,15.317,0,1,1,1188.5,2535.18Z" transform="translate(-1172 -2534)"/>
+</svg>

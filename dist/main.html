@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Главная</title>
+    <link rel="stylesheet" href="/app/css/app.css?v=1579080494481">
+    <script>
+        function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
+    </script>
+</head>
+
+<body>
+    <div class="main-wrap">
+        <div class="main">
+            <header class="header">
+                <div class="header__wrap wrap flex flex_vertical flex_justify">
+                    <a class="header__logo">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/logo.webp">
+                                <img src="/app/img/logo.png" class="header__logo-pic" alt="" role="presentation" />
+                        </picture><span class="header__logo-text">страхование</span>
+                    </a>
+                    <nav class="header__nav flex"><a class="header__link" href="#">Расчет</a><a class="header__link js-scroll-to" href="#scam">Обман</a><a class="header__link js-scroll-to" href="#car">Машина</a><a class="header__link js-scroll-to" href="#kasko">Каско</a><a class="header__link js-scroll-to"
+                        href="#contact">Контакты</a>
+                    </nav>
+                    <div class="header__call flex flex_vertical"><a class="header__phone" href="tel:+7 (812) 770-22-65">+7 (812) 770-22-65</a><a class="header__btn btn btn_stroke btn_small js-modal" href="#recall">заказать звонок</a>
+                    </div>
+                    <div class="header__burger">
+                        <div class="header__burger-line"></div>
+                        <div class="header__burger-line"></div>
+                        <div class="header__burger-line"></div>
+                    </div>
+                </div>
+                <div class="header__mobile">
+                    <div class="header__mobile-nav"><a class="header__mobile-link" href="#">Расчет</a><a class="header__mobile-link js-scroll-to" href="#scam">Обман</a><a class="header__mobile-link js-scroll-to" href="#car">Машина</a><a class="header__mobile-link js-scroll-to" href="#kasko">Каско</a>
+                        <a
+                        class="header__mobile-link js-scroll-to" href="#contact">Контакты</a>
+                    </div><a class="header__mobile-phone" href="tel:+7 (812) 770-22-65">+7 (812) 770-22-65</a><a class="header__mobile-btn btn btn_fill btn_small js-modal" href="#recall">заказать звонок</a>
+                </div>
+            </header>
+            <div class="main__wrap wrap">
+                <div class="main__center flex">
+                    <div class="main__left">
+                        <div class="main__title h1">Расчет Каско</div>
+                        <div class="main__desc">в&nbsp;15+ страховых
+                            <br>компаниях за&nbsp;2 минуты</div><a class="main__btn btn btn_big btn_fill" href="#">Онлайн-расчет</a>
+                    </div>
+                    <div class="main__right">
+                        <div class="main__percent-back">50%</div>
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/main__car.webp">
+                                <img src="/app/img/main__car.png" class="main__car" alt="" role="presentation" />
+                        </picture>
+                        <div class="main__box flex flex_vertical flex_center">
+                            <div class="main__box-wrap">
+                                <div class="main__box-text">Скидки до</div>
+                                <div class="main__box-percent">50%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__bottom">
+                    <div class="main__list flex">
+                        <div class="main__list-item">
+                            <div class="main__list-wrap">
+                                <div class="main__list-icon">
+                                    <svg class="icon icon-imac imac" viewBox="0 0 38 34">
+                                        <use xlink:href="/app/icons/sprite.svg#imac"></use>
+                                    </svg>
+                                </div>
+                                <div class="main__list-text"><span class="main__list-number">1</span>Расчет в&nbsp;15 страховых
+                                    <br>компаниях</div>
+                            </div>
+                        </div>
+                        <div class="main__list-item">
+                            <div class="main__list-wrap">
+                                <div class="main__list-icon">
+                                    <svg class="icon icon-file file" viewBox="0 0 27 34">
+                                        <use xlink:href="/app/icons/sprite.svg#file"></use>
+                                    </svg>
+                                </div>
+                                <div class="main__list-text"><span class="main__list-number">2</span>Оформление
+                                    <br>за&nbsp;5 минут</div>
+                            </div>
+                        </div>
+                        <div class="main__list-item">
+                            <div class="main__list-wrap">
+                                <div class="main__list-icon">
+                                    <svg class="icon icon-clock clock" viewBox="0 0 36 36">
+                                        <use xlink:href="/app/icons/sprite.svg#clock"></use>
+                                    </svg>
+                                </div>
+                                <div class="main__list-text"><span class="main__list-number">3</span>Доставка полиса
+                                    <br>за&nbsp;3 часа</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__mobile">
+                    <div class="main__mobile-title h1">Каско</div>
+                    <div class="main__mobile-desc">От 15 страховых компаний</div><a class="main__mobile-btn btn btn_big btn_fill" href="#">Онлайн-расчет за&nbsp;2 мин</a>
+                    <div class="main__mobile-car">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/main__car_mobile.webp">
+                                <img src="/app/img/main__car_mobile.png" />
+                        </picture>
+                    </div>
+                    <div class="main__mobile-list">
+                        <div class="main__mobile-item">
+                            <div class="main__mobile-wrap">
+                                <div class="main__mobile-icon">
+                                    <svg class="icon icon-imac imac" viewBox="0 0 38 34">
+                                        <use xlink:href="/app/icons/sprite.svg#imac"></use>
+                                    </svg>
+                                </div>
+                                <div class="main__mobile-text"><span class="main__mobile-number">1</span>Скидки до&nbsp;50%</div>
+                            </div>
+                        </div>
+                        <div class="main__mobile-item">
+                            <div class="main__mobile-wrap">
+                                <div class="main__mobile-icon">
+                                    <svg class="icon icon-file file" viewBox="0 0 27 34">
+                                        <use xlink:href="/app/icons/sprite.svg#file"></use>
+                                    </svg>
+                                </div>
+                                <div class="main__mobile-text"><span class="main__mobile-number">2</span>Оформление
+                                    <br>за&nbsp;5 минут</div>
+                            </div>
+                        </div>
+                        <div class="main__mobile-item">
+                            <div class="main__mobile-wrap">
+                                <div class="main__mobile-icon">
+                                    <svg class="icon icon-clock clock" viewBox="0 0 36 36">
+                                        <use xlink:href="/app/icons/sprite.svg#clock"></use>
+                                    </svg>
+                                </div>
+                                <div class="main__mobile-text"><span class="main__mobile-number">3</span>Доставка за&nbsp;3 часа</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scam" id="scam">
+            <div class="scam__wrap wrap">
+                <div class="scam__head flex flex_justify">
+                    <div class="scam__left">
+                        <h2 class="scam__title h2">Акции страховых компаний <br><span>это не всегда хорошо</span></h2>
+                        <div class="scam__desc">Примеры хитростей и&nbsp;уловок страховых компаний</div>
+                        <div class="scam__desc-mobile">это не всегда хорошо</div>
+                    </div>
+                    <div class="scam__right">
+                        <div class="scam__counter"><span class="swiper-pagination-current">1  </span>/ <span class="swiper-pagination-total">6</span>
+                        </div>
+                        <div class="scam__nav">
+                            <div class="scam__arrow scam__arrow_left">
+                                <div class="scam__arrow-icon">
+                                    <svg class="icon icon-arrow-left arrow-left" viewBox="0 0 9.41 14">
+                                        <use xlink:href="/app/icons/sprite.svg#arrow-left"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="scam__pagination"></div>
+                            <div class="scam__arrow scam__arrow_right">
+                                <div class="scam__arrow-icon">
+                                    <svg class="icon icon-arrow-right arrow-right" viewBox="0 0 9.41 14">
+                                        <use xlink:href="/app/icons/sprite.svg#arrow-right"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scam__slider js-slider swiper-container">
+                <div class="scam__list swiper-wrapper">
+                    <div class="scam__slide swiper-slide">
+                        <div class="scam__item">
+                            <div class="scam__item-head">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/tinkoff.webp">
+                                        <img src="/app/img/tinkoff.png" class="scam__logo" alt="" role="presentation" />
+                                </picture>
+                            </div>
+                            <div class="scam__content content">
+                                <div class="scam__false">
+                                    <h4>Кешбэк 20% на&nbsp;КАСКО</h4>
+                                    <p>Суть маркетинга: Покупайте и&nbsp;оплачивайте страховку, а&nbsp;мы вернем вам 20% кешбэком</p>
+                                </div>
+                                <div class="scam__true">
+                                    <h4><span class="scam__item-dot">•</span>Правда</h4>
+                                    <p>Вам необходимо купить как ОСАГО так и&nbsp;КАСКО.
+                                        <br>С учетом кешбэка это покажется выгодно, но возврат Вам сделают только с&nbsp;полиса ОСАГО, да ещеи в&nbsp;течении нескольких месяцев. Также стоит учесть что кешбэк можно потратить только на&nbsp;выбранные категории.</p>
+                                    <p>А если у&nbsp;Вас нет кредитной карты Тинькофф, вы обязательно станете обладателем очередной кредитной карты.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scam__slide swiper-slide">
+                        <div class="scam__item">
+                            <div class="scam__item-head">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/alfa.webp">
+                                        <img src="/app/img/alfa.png" class="scam__logo" alt="" role="presentation" />
+                                </picture>
+                            </div>
+                            <div class="scam__content content">
+                                <div class="scam__false">
+                                    <h4>КАСКО 50 на&nbsp;50</h4>
+                                    <p>Суть маркетинга: Заплатите 50% от&nbsp;полиса сейчас.
+                                        <br>Если наступит страховой случай заплатите оставшиесь 50%</p>
+                                </div>
+                                <div class="scam__true">
+                                    <h4><span class="scam__item-dot">•</span>Правда</h4>
+                                    <p>Это предложение расчитывает следующим образом: Например у&nbsp;Вас автомобиль BMW, рыночное предложениена полное КАСКО 80 000 руб. И это довольно существенная сумма. Страховая компания предлагает Вам: заплатите 55 000
+                                        руб. и&nbsp;у Вас будет КАСКО. И в&nbsp;данном случае Вы покупаете просто бумажку, полис не работает пока не заплатите вторую сумму. Вы либо гарантированно отдали 55 000 руб., а&nbsp;если все-таки решили воспользоваться
+                                        заплатите все 110 000 руб. вместо 80 000 руб.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scam__slide swiper-slide">
+                        <div class="scam__item">
+                            <div class="scam__item-head">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/tinkoff.webp">
+                                        <img src="/app/img/tinkoff.png" class="scam__logo" alt="" role="presentation" />
+                                </picture>
+                            </div>
+                            <div class="scam__content content">
+                                <div class="scam__false">
+                                    <h4>Кешбэк 20% на&nbsp;КАСКО</h4>
+                                    <p>Суть маркетинга: Покупайте и&nbsp;оплачивайте страховку, а&nbsp;мы вернем вам 20% кешбэком</p>
+                                </div>
+                                <div class="scam__true">
+                                    <h4><span class="scam__item-dot">•</span>Правда</h4>
+                                    <p>Вам необходимо купить как ОСАГО так и&nbsp;КАСКО.
+                                        <br>С учетом кешбэка это покажется выгодно, но возврат Вам сделают только с&nbsp;полиса ОСАГО, да ещеи в&nbsp;течении нескольких месяцев. Также стоит учесть что кешбэк можно потратить только на&nbsp;выбранные категории.</p>
+                                    <p>А если у&nbsp;Вас нет кредитной карты Тинькофф, вы обязательно станете обладателем очередной кредитной карты.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scam__slide swiper-slide">
+                        <div class="scam__item">
+                            <div class="scam__item-head">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/alfa.webp">
+                                        <img src="/app/img/alfa.png" class="scam__logo" alt="" role="presentation" />
+                                </picture>
+                            </div>
+                            <div class="scam__content content">
+                                <div class="scam__false">
+                                    <h4>КАСКО 50 на&nbsp;50</h4>
+                                    <p>Суть маркетинга: Заплатите 50% от&nbsp;полиса сейчас.
+                                        <br>Если наступит страховой случай заплатите оставшиесь 50%</p>
+                                </div>
+                                <div class="scam__true">
+                                    <h4><span class="scam__item-dot">•</span>Правда</h4>
+                                    <p>Это предложение расчитывает следующим образом: Например у&nbsp;Вас автомобиль BMW, рыночное предложениена полное КАСКО 80 000 руб. И это довольно существенная сумма. Страховая компания предлагает Вам: заплатите 55 000
+                                        руб. и&nbsp;у Вас будет КАСКО. И в&nbsp;данном случае Вы покупаете просто бумажку, полис не работает пока не заплатите вторую сумму. Вы либо гарантированно отдали 55 000 руб., а&nbsp;если все-таки решили воспользоваться
+                                        заплатите все 110 000 руб. вместо 80 000 руб.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <picture>
+                <source type="image/webp" srcset="/app/img/scam__dots.webp">
+                    <img src="/app/img/scam__dots.png" class="scam__bottom-dots" alt="" role="presentation" />
+            </picture>
+        </div>
+        <div class="kasko" id="kasko">
+            <div class="kasko__wrap wrap">
+                <div class="kasko__content">
+                    <h2 class="kasko__title h1">КАСКО на&nbsp;BMW x5</h2>
+                    <div class="kasko__desc">Выберите свой вариант</div>
+                    <div class="kasko__buttons flex flex_center"><a class="kasko__btn btn btn_big btn_fill" href="#">Новый полис<span class="btn__icon-docs"><svg class="icon icon-docs docs" viewBox="0 0 27 32"><use xlink:href="/app/icons/sprite.svg#docs"></use></svg></span></a><a class="kasko__btn btn btn_big btn_stroke"
+                        href="#">Продление<span class="btn__icon-restore"><svg class="icon icon-restore restore" viewBox="0 0 33 33"><use xlink:href="/app/icons/sprite.svg#restore"></use></svg></span></a>
+                    </div>
+                    <picture>
+                        <source type="image/webp" srcset="/app/img/kasko__img.webp">
+                            <img src="/app/img/kasko__img.png" class="kasko__cars" alt="" role="presentation" />
+                    </picture>
+                </div>
+            </div>
+        </div>
+        <div class="problem">
+            <div class="problem__wrap wrap">
+                <div class="problem__head flex flex_justify flex_end">
+                    <h2 class="problem__title h2">Неожиданные проблемы <br>обычно появляются <br>после покупки полиса</h2>
+                    <div class="problem__desc">
+                        <div class="problem__desc-icon">
+                            <svg class="icon icon-att att" viewBox="0 0 39.97 36">
+                                <use xlink:href="/app/icons/sprite.svg#att"></use>
+                            </svg>
+                        </div>
+                        <div class="problem__desc-text">Вы наверняка
+                            <br>с&nbsp;ними сталкивались</div>
+                    </div>
+                </div>
+                <div class="problem__head-mobile">
+                    <h2 class="problem__title h2">Проблемы после покупки полиса</h2>
+                    <div class="problem__text">С ними сталкиваются 78% покупателей</div>
+                </div>
+                <div class="problem__list flex flex_justify">
+                    <div class="problem__item" style="background-image:url(/app/img/problem1.jpg)">
+                        <div class="problem__item-content">
+                            <h3 class="problem__item-title h3">Переплата до&nbsp;50.000 р.</h3>
+                            <p class="problem__item-desc p">За лишние опции, которые
+                                <br>Вам не нужны</p>
+                        </div>
+                    </div>
+                    <div class="problem__item" style="background-image:url(/app/img/problem2.jpg)">
+                        <div class="problem__item-content">
+                            <h3 class="problem__item-title h3">Некачественый ремонт</h3>
+                            <p class="problem__item-desc p">Б/У запчасти, сомнительные станции ремонта, бесконечные согласования между страховой компанией и&nbsp;дилером</p>
+                        </div>
+                    </div>
+                    <div class="problem__item" style="background-image:url(/app/img/problem3.jpg)">
+                        <div class="problem__item-content">
+                            <h3 class="problem__item-title h3">Отказ от&nbsp;выплаты</h3>
+                            <p class="problem__item-desc p">Из-за&nbsp;скрытых условий
+                                <br>договора страхования</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem__bottom flex">
+                    <div class="problem__bottom-item problem__bottom-item_left">
+                        <div class="problem__bottom-bg problem__bottom-bg_left" style="background-image:url(/app/img/dislike__img.jpg)"></div>
+                        <div class="problem__bottom-content">
+                            <div class="problem__bottom-icon">
+                                <svg class="icon icon-dislike dislike" viewBox="0 0 48 40">
+                                    <use xlink:href="/app/icons/sprite.svg#dislike"></use>
+                                </svg>
+                            </div>
+                            <h2 class="problem__bottom-title h2">Выбор КАСКО <br>самостоятельно</h2>
+                            <div class="problem__bottom-desc">Навязанные опции и&nbsp;риск не учесть
+                                <br>скрытые условия договора</div>
+                        </div>
+                    </div>
+                    <div class="problem__bottom-item problem__bottom-item_right">
+                        <div class="problem__bottom-bg problem__bottom-bg_right" style="background-image:url(/app/img/like__img.jpg)"></div>
+                        <div class="problem__bottom-content">
+                            <div class="problem__bottom-icon">
+                                <svg class="icon icon-like like" viewBox="0 0 48 40">
+                                    <use xlink:href="/app/icons/sprite.svg#like"></use>
+                                </svg>
+                            </div>
+                            <h2 class="problem__bottom-title h2">Подбор КАСКО <br>с&nbsp;Veritas</h2>
+                            <div class="problem__bottom-desc">Всегда только те опции в&nbsp;КАСКО,
+                                <br>которые подходят именно Вам</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scheme">
+            <div class="scheme__wrap wrap">
+                <div class="scheme__head">
+                    <h2 class="scheme__title h2">Сохраним нервы и&nbsp;деньги <br>при&nbsp;наступлении страхового случая</h2>
+                    <div class="scheme__desc">Мы всегда на&nbsp;вашей стороне</div>
+                </div>
+                <div class="scheme__head-mobile">
+                    <h2 class="scheme__title h2">Сохраним нервы и&nbsp;деньги </h2>
+                    <div class="scheme__desc">При наступлении страхового случая</div>
+                </div>
+                <div class="scheme__top">
+                    <div class="scheme__row flex flex_justify">
+                        <div class="scheme__item">
+                            <div class="scheme__item-wrap">
+                                <div class="scheme__icon-list">
+                                    <svg class="icon icon-list list" viewBox="0 0 45 51">
+                                        <use xlink:href="/app/icons/sprite.svg#list"></use>
+                                    </svg>
+                                </div>
+                                <div class="scheme__text p"><span>Укажем как правильно<br>действовать </span>
+                                    <br>при&nbsp;наступлении любого
+                                    <br>инцидента</div>
+                            </div>
+                        </div>
+                        <div class="scheme__item scheme__item_m-hidden">
+                            <div class="scheme__item-wrap">
+                                <div class="scheme__icon-clock2">
+                                    <svg class="icon icon-clock2 clock2" viewBox="0 0 51 51">
+                                        <use xlink:href="/app/icons/sprite.svg#clock2"></use>
+                                    </svg>
+                                </div>
+                                <div class="scheme__text p">На связи</div>
+                                <div class="scheme__time">24 / 7</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scheme__row flex flex_justify">
+                        <div class="scheme__item">
+                            <div class="scheme__item-wrap">
+                                <div class="scheme__icon-manager">
+                                    <svg class="icon icon-manager manager" viewBox="0 0 47 51">
+                                        <use xlink:href="/app/icons/sprite.svg#manager"></use>
+                                    </svg>
+                                </div>
+                                <div class="scheme__text p">Закрепим за&nbsp;Вами
+                                    <br>персонального
+                                    <br>менеджера</div>
+                            </div>
+                        </div><a class="scheme__item-btn btn-round js-modal" href="recall"><span class="btn-round__line"><svg xmlns="http://www.w3.org/2000/svg" width="259.66" height="263" viewBox="0 0 259.66 263"><path d="M1528.66,5844.54A131.015,131.015,0,1,1,1401,5684" transform="translate(-1269.5 -5683.5)"></path></svg></span><span class="btn-round__text">Заказать<br>звонок</span></a>
+                        <div
+                        class="scheme__item scheme__item_m-visible">
+                            <div class="scheme__item-wrap">
+                                <div class="scheme__icon-clock2">
+                                    <svg class="icon icon-clock2 clock2" viewBox="0 0 51 51">
+                                        <use xlink:href="/app/icons/sprite.svg#clock2"></use>
+                                    </svg>
+                                </div>
+                                <div class="scheme__text p">На связи</div>
+                                <div class="scheme__time">24 / 7</div>
+                            </div>
+                    </div>
+                </div>
+                <picture>
+                    <source type="image/webp" srcset="/app/img/expert.webp">
+                        <img src="/app/img/expert.png" class="scheme__expert" alt="" role="presentation" />
+                </picture>
+            </div>
+            <div class="scheme__screen">
+                <picture>
+                    <source type="image/webp" srcset="/app/img/screen.webp">
+                        <img src="/app/img/screen.jpg" class="scheme__screen-img" alt="" role="presentation" />
+                </picture><a class="scheme__screen-btn btn-round" href="#"><span class="btn-round__line"><svg xmlns="http://www.w3.org/2000/svg" width="259.66" height="263" viewBox="0 0 259.66 263"><path d="M1528.66,5844.54A131.015,131.015,0,1,1,1401,5684" transform="translate(-1269.5 -5683.5)"></path></svg></span><span class="btn-round__text">Онлайн<br>расчет</span></a>
+            </div>
+            <div class="scheme__bottom flex">
+                <div class="scheme__bottom-left">
+                    <h2 class="scheme__bottom-title h2">Подбор КАСКО</h2>
+                    <div class="scheme__bottom-desc h3">Сравни 30+ предложений и&nbsp;выбери
+                        <br>лучшее предложение со&nbsp;скидкой до</div><a class="scheme__bottom-btn btn btn_big btn_fill" href="#">Онлайн-расчет</a>
+                </div>
+                <div class="scheme__bottom-right">
+                    <div class="scheme__percent">50%</div>
+                </div>
+            </div>
+            <div class="scheme__bottom-mobile">
+                <div class="scheme__bottom-text">После наступления инцидента</div><a class="scheme__bottom-btn btn btn_big btn_fill" href="#">Онлайн-расчет КАСКО</a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" id="contact">
+        <div class="footer__wrap wrap">
+            <div class="footer__top flex flex_justify flex_vertical">
+                <div class="footer__top-left">
+                    <h2 class="footer__title h1">Контакты</h2>
+                    <div class="footer__desc">ООО «Веритас страхование»</div>
+                    <div class="footer__list">
+                        <div class="footer__item">
+                            <div class="footer__item-left">Адрес:</div>
+                            <div class="footer__item-right">Санкт-Петербург, ул. Белоостровская,
+                                <br>д 17, к&nbsp;2, лит А, БЦ "Avantage", офис 807</div>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__item-left">Телефон:</div>
+                            <div class="footer__item-right">+7 900 622-96-75</div>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__item-left">Email:</div>
+                            <div class="footer__item-right"><a href="mailto:info@veritas-ins.ru">info@veritas-ins.ru</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__top-right">
+                    <picture>
+                        <source type="image/webp" srcset="/app/img/footer__dots.webp">
+                            <img src="/app/img/footer__dots.png" class="footer__dots" alt="" role="presentation" />
+                    </picture>
+                    <div class="footer__map-wrap">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/map.webp">
+                                <img src="/app/img/map.jpg" class="footer__map-img" alt="" role="presentation" />
+                        </picture>
+                        <div class="footer__map" id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="wrap">
+                <div class="footer__row flex">
+                    <div class="footer__left">
+                        <a class="footer__logo">
+                            <picture>
+                                <source type="image/webp" srcset="/app/img/logo.webp">
+                                    <img src="/app/img/logo.png" class="footer__logo-pic" alt="" role="presentation" />
+                            </picture><span class="footer__logo-text">страхование</span>
+                        </a>
+                    </div>
+                    <div class="footer__right">
+                        <nav class="footer__nav flex"><a class="footer__link" href="#">Расчет</a><a class="footer__link js-scroll-to" href="#scam">Обман</a><a class="footer__link js-scroll-to" href="#car">Машина</a><a class="footer__link js-scroll-to" href="#kasko">Каско</a><a class="footer__link js-scroll-to"
+                            href="#contact">Контакты</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__row flex flex_vertical">
+                    <div class="footer__left">
+                        <div class="footer__copyright">© Все права защищены 2019 г.</div>
+                    </div>
+                    <div class="footer__right flex flex_justify vertical"><a class="footer__polity" href="#">Политика конфиденциальности</a><a class="footer__develop" href="http://karanikola.ru" target="_blank">Дизайн и&nbsp;разработка - Karanikola</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modals mfp-hide" id="recall"></div>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVfaEXUdaqazXAymi_chvWL5MmmAIL2h8"></script>
+    <script src="/app/js/app.js?v=1579080494531"></script>
+</body>
+
+</html>
