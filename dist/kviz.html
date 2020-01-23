@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Квиз</title>
+    <link rel="stylesheet" href="/app/css/app.css?v=1579817754878">
+    <script>
+        function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
+    </script>
+</head>
+
+<body>
+    <div class="main-wrap">
+        <div class="kviz">
+            <div class="kviz__top">
+                <header class="header">
+                    <div class="header__wrap wrap flex flex_vertical flex_justify">
+                        <a class="header__logo" href="/main.html">
+                            <picture>
+                                <source type="image/webp" srcset="/app/img/logo.webp">
+                                    <img src="/app/img/logo.png" class="header__logo-pic" alt="" role="presentation" />
+                            </picture><span class="header__logo-text">страхование</span>
+                        </a>
+                        <nav class="header__nav flex"><a class="header__link" href="/kviz.html">Расчет</a><a class="header__link js-scroll-to" href="#scam">Обман</a><a class="header__link js-scroll-to" href="#car">Машина</a><a class="header__link js-scroll-to" href="#kasko">Каско</a>
+                            <a
+                            class="header__link js-scroll-to" href="#contact">Контакты</a>
+                        </nav>
+                        <div class="header__call flex flex_vertical"><a class="header__phone" href="tel:+7 (812) 770-22-65">+7 (812) 770-22-65</a><a class="header__btn btn btn_stroke btn_small js-modal" href="#recall">заказать звонок</a>
+                        </div>
+                        <div class="header__burger">
+                            <div class="header__burger-line"></div>
+                            <div class="header__burger-line"></div>
+                            <div class="header__burger-line"></div>
+                        </div>
+                    </div>
+                    <div class="header__mobile">
+                        <div class="header__mobile-nav"><a class="header__mobile-link" href="/kviz.html">Расчет</a><a class="header__mobile-link js-scroll-to" href="#scam">Обман</a><a class="header__mobile-link js-scroll-to" href="#car">Машина</a><a class="header__mobile-link js-scroll-to"
+                            href="#kasko">Каско</a><a class="header__mobile-link js-scroll-to" href="#contact">Контакты</a>
+                        </div><a class="header__mobile-phone" href="tel:+7 (812) 770-22-65">+7 (812) 770-22-65</a><a class="header__mobile-btn btn btn_fill btn_small js-modal" href="#recall">заказать звонок</a>
+                    </div>
+                </header>
+            </div>
+            <div class="kviz__center">
+                <div class="kviz__wrap wrap">
+                    <div class="kviz__steps">
+                        <div class="kviz__step is-active">
+                            <div class="kviz__circle">
+                                <svg width="42" height="42">
+                                    <circle class="circle" cx="21" cy="21" r="20" stroke-dashoffset="480"></circle>
+                                </svg>
+                                <div class="kviz__circle-number">1</div>
+                            </div>
+                            <div class="kviz__head flex flex_vertical">
+                                <div class="kviz__head-left">
+                                    <h2 class="kviz__head-title">Марка автомобиля</h2>
+                                </div>
+                                <div class="kviz__head-right flex flex_justify flex_vertical">
+                                    <input class="kviz__head-input input input_small" placeholder="Введите марку автомобиля" v-model="company" type="text" /><a class="kviz__head-btn btn btn_small btn_fill js-next-step" href="#">Далее</a>
+                                    <div class="kviz__head-text">Или выберите из&nbsp;списка ниже</div>
+                                </div>
+                            </div>
+                            <div class="kviz__list kviz__list_brend" data-value="brend">
+                                <div class="kviz__item">Acura</div>
+                                <div class="kviz__item">Alfa Romeo</div>
+                                <div class="kviz__item">Aston Martin</div>
+                                <div class="kviz__item">Audi</div>
+                                <div class="kviz__item">Bentley</div>
+                                <div class="kviz__item">Bmw</div>
+                                <div class="kviz__item">Brilliance</div>
+                                <div class="kviz__item">Buick</div>
+                                <div class="kviz__item">Byd</div>
+                                <div class="kviz__item">Cadillac</div>
+                                <div class="kviz__item">Changan</div>
+                                <div class="kviz__item">Chery</div>
+                                <div class="kviz__item">Chevrolet</div>
+                                <div class="kviz__item">Chrysler</div>
+                                <div class="kviz__item">Citroen</div>
+                                <div class="kviz__item">Dacia</div>
+                                <div class="kviz__item">Daewoo</div>
+                                <div class="kviz__item">Daihatsu</div>
+                                <div class="kviz__item">Datsun</div>
+                                <div class="kviz__item">Dodge</div>
+                                <div class="kviz__item">Faw</div>
+                                <div class="kviz__item">Ferrari</div>
+                                <div class="kviz__item">Fiat</div>
+                                <div class="kviz__item">Ford</div>
+                                <div class="kviz__item">Geely</div>
+                                <div class="kviz__item">Genesis</div>
+                                <div class="kviz__item">Gmc</div>
+                                <div class="kviz__item">Great Wall</div>
+                                <div class="kviz__item">Honda</div>
+                                <div class="kviz__item">Hyundai</div>
+                                <div class="kviz__item">Infiniti</div>
+                                <div class="kviz__item">Jac</div>
+                                <div class="kviz__item">Jaguar</div>
+                                <div class="kviz__item">Jeep</div>
+                                <div class="kviz__item">Kia</div>
+                                <div class="kviz__item">Lamborghini</div>
+                                <div class="kviz__item">Lancia</div>
+                                <div class="kviz__item">Land Rover</div>
+                                <div class="kviz__item">Lexus</div>
+                                <div class="kviz__item">Lifan</div>
+                                <div class="kviz__item">Lincoln</div>
+                                <div class="kviz__item">Lotus</div>
+                                <div class="kviz__item">Luxgen</div>
+                                <div class="kviz__item">Maserati</div>
+                                <div class="kviz__item">Maybach</div>
+                                <div class="kviz__item">Mazda</div>
+                                <div class="kviz__item">Mercedes-benz</div>
+                                <div class="kviz__item">Mini</div>
+                                <div class="kviz__item">Mitsubishi</div>
+                                <div class="kviz__item">Nissan</div>
+                                <div class="kviz__item">Opel</div>
+                                <div class="kviz__item">Peugeot</div>
+                                <div class="kviz__item">Ravon</div>
+                                <div class="kviz__item">Renault</div>
+                                <div class="kviz__item">Rolls-royce</div>
+                                <div class="kviz__item">Saab</div>
+                                <div class="kviz__item">Scion</div>
+                                <div class="kviz__item">Seat</div>
+                                <div class="kviz__item">Skoda</div>
+                                <div class="kviz__item">Smart</div>
+                                <div class="kviz__item">Ssang Yong</div>
+                                <div class="kviz__item">Subaru</div>
+                                <div class="kviz__item">Suzuki</div>
+                                <div class="kviz__item">Tagaz</div>
+                                <div class="kviz__item">Toyota</div>
+                                <div class="kviz__item">Volkswagen</div>
+                                <div class="kviz__item">Volvo</div>
+                                <div class="kviz__item">Vortex</div>
+                                <div class="kviz__item">ВАЗ (lada)</div>
+                                <div class="kviz__item">ГАЗ</div>
+                                <div class="kviz__item">ЗАЗ</div>
+                                <div class="kviz__item">УАЗ</div>
+                            </div>
+                        </div>
+                        <div class="kviz__step">
+                            <div class="kviz__circle">
+                                <svg width="42" height="42">
+                                    <circle class="circle" cx="21" cy="21" r="20" stroke-dashoffset="465"></circle>
+                                </svg>
+                                <div class="kviz__circle-number">2</div>
+                            </div>
+                            <div class="kviz__head flex flex_vertical">
+                                <div class="kviz__head-left">
+                                    <h2 class="kviz__head-title">Модель автомобиля</h2>
+                                </div>
+                                <div class="kviz__head-right flex flex_justify flex_vertical">
+                                    <input class="kviz__head-input input input_small" placeholder="Введите модель автомобиля" type="text" /><a class="kviz__head-btn btn btn_small btn_fill js-next-step" href="#">Далее</a>
+                                    <div class="kviz__head-text">Или выберите из&nbsp;списка ниже</div>
+                                </div>
+                            </div>
+                            <div class="kviz__list kviz__list_model" data-value="model">
+                                <div class="kviz__item">A1</div>
+                                <div class="kviz__item">A3</div>
+                                <div class="kviz__item">A4</div>
+                                <div class="kviz__item">A5</div>
+                                <div class="kviz__item">A6</div>
+                                <div class="kviz__item">A7</div>
+                                <div class="kviz__item">A8</div>
+                                <div class="kviz__item">Q2</div>
+                                <div class="kviz__item">Q3</div>
+                                <div class="kviz__item">Q5</div>
+                                <div class="kviz__item">Q7</div>
+                                <div class="kviz__item">R8</div>
+                                <div class="kviz__item">RS 3</div>
+                                <div class="kviz__item">RS 4</div>
+                                <div class="kviz__item">RS 5</div>
+                                <div class="kviz__item">RS 6</div>
+                                <div class="kviz__item">RS 7</div>
+                                <div class="kviz__item">RS Q3</div>
+                                <div class="kviz__item">S3</div>
+                                <div class="kviz__item">S4</div>
+                                <div class="kviz__item">S5</div>
+                                <div class="kviz__item">S6</div>
+                                <div class="kviz__item">S7</div>
+                                <div class="kviz__item">S8</div>
+                                <div class="kviz__item">SQ5</div>
+                                <div class="kviz__item">SQ7</div>
+                                <div class="kviz__item">TT</div>
+                            </div>
+                        </div>
+                        <div class="kviz__step">
+                            <div class="kviz__circle">
+                                <svg width="42" height="42">
+                                    <circle class="circle" cx="21" cy="21" r="20" stroke-dashoffset="450"></circle>
+                                </svg>
+                                <div class="kviz__circle-number">3</div>
+                            </div>
+                            <div class="kviz__head flex flex_vertical">
+                                <div class="kviz__head-left">
+                                    <h2 class="kviz__head-title">Год выпуска</h2>
+                                </div>
+                                <div class="kviz__head-right flex flex_justify flex_vertical">
+                                    <input class="kviz__head-input input input_small" placeholder="Введите год выпуска" type="text" /><a class="kviz__head-btn btn btn_small btn_fill js-next-step" href="#">Далее</a>
+                                    <div class="kviz__head-text">Или выберите из&nbsp;списка ниже</div>
+                                </div>
+                            </div>
+                            <div class="kviz__list kviz__list_year" data-value="year">
+                                <div class="kviz__item">2000</div>
+                                <div class="kviz__item">2001</div>
+                                <div class="kviz__item">2002</div>
+                                <div class="kviz__item">2003</div>
+                                <div class="kviz__item">2004</div>
+                                <div class="kviz__item">2005</div>
+                                <div class="kviz__item">2006</div>
+                                <div class="kviz__item">2007</div>
+                                <div class="kviz__item">2008</div>
+                                <div class="kviz__item">2009</div>
+                                <div class="kviz__item">2010</div>
+                                <div class="kviz__item">2011</div>
+                                <div class="kviz__item">2012</div>
+                                <div class="kviz__item">2013</div>
+                                <div class="kviz__item">2014</div>
+                                <div class="kviz__item">2015</div>
+                                <div class="kviz__item">2016</div>
+                                <div class="kviz__item">2017</div>
+                                <div class="kviz__item">2018</div>
+                                <div class="kviz__item">2019</div>
+                            </div>
+                        </div>
+                        <div class="kviz__step">
+                            <div class="kviz__circle">
+                                <svg width="42" height="42">
+                                    <circle class="circle" cx="21" cy="21" r="20" stroke-dashoffset="435"></circle>
+                                </svg>
+                                <div class="kviz__circle-number">4</div>
+                            </div>
+                            <div class="kviz__head flex flex_vertical">
+                                <div class="kviz__head-left">
+                                    <h2 class="kviz__head-title">Возраст водителя</h2>
+                                </div>
+                                <div class="kviz__head-right flex flex_justify flex_vertical">
+                                    <input class="kviz__head-input input input_small" placeholder="Введите возраст водителя" type="text" /><a class="kviz__head-btn btn btn_small btn_fill js-next-step" href="#">Далее</a>
+                                    <div class="kviz__head-text">Или выберите из&nbsp;списка ниже</div>
+                                </div>
+                            </div>
+                            <div class="kviz__list kviz__list_age" data-value="age">
+                                <div class="kviz__item">19</div>
+                                <div class="kviz__item">20</div>
+                                <div class="kviz__item">21</div>
+                                <div class="kviz__item">22</div>
+                                <div class="kviz__item">23</div>
+                                <div class="kviz__item">24</div>
+                                <div class="kviz__item">25</div>
+                                <div class="kviz__item">26</div>
+                                <div class="kviz__item">27</div>
+                                <div class="kviz__item">28</div>
+                                <div class="kviz__item">29</div>
+                                <div class="kviz__item">30</div>
+                                <div class="kviz__item">31</div>
+                                <div class="kviz__item">32</div>
+                                <div class="kviz__item">33</div>
+                                <div class="kviz__item">34</div>
+                                <div class="kviz__item">35</div>
+                                <div class="kviz__item">36</div>
+                                <div class="kviz__item">37</div>
+                                <div class="kviz__item">38</div>
+                                <div class="kviz__item">39</div>
+                                <div class="kviz__item">40</div>
+                                <div class="kviz__item">41</div>
+                                <div class="kviz__item">42</div>
+                                <div class="kviz__item">43</div>
+                                <div class="kviz__item">44</div>
+                                <div class="kviz__item">45</div>
+                                <div class="kviz__item">46</div>
+                                <div class="kviz__item">47</div>
+                                <div class="kviz__item">48</div>
+                                <div class="kviz__item">49</div>
+                                <div class="kviz__item">50</div>
+                                <div class="kviz__item">51</div>
+                                <div class="kviz__item">52</div>
+                                <div class="kviz__item">53</div>
+                                <div class="kviz__item">54</div>
+                                <div class="kviz__item">55</div>
+                                <div class="kviz__item">56</div>
+                                <div class="kviz__item">57</div>
+                                <div class="kviz__item">58</div>
+                                <div class="kviz__item">59</div>
+                                <div class="kviz__item">60</div>
+                                <div class="kviz__item">61</div>
+                                <div class="kviz__item">62</div>
+                                <div class="kviz__item">63</div>
+                                <div class="kviz__item">64</div>
+                                <div class="kviz__item">65</div>
+                                <div class="kviz__item">66</div>
+                                <div class="kviz__item">67</div>
+                                <div class="kviz__item">68</div>
+                                <div class="kviz__item">69</div>
+                                <div class="kviz__item">70</div>
+                            </div>
+                        </div>
+                        <div class="kviz__step">
+                            <div class="kviz__circle">
+                                <svg width="42" height="42">
+                                    <circle class="circle" cx="21" cy="21" r="20" stroke-dashoffset="420"></circle>
+                                </svg>
+                                <div class="kviz__circle-number">5</div>
+                            </div>
+                            <div class="kviz__head flex flex_vertical">
+                                <div class="kviz__head-left">
+                                    <h2 class="kviz__head-title">Стаж вождения</h2>
+                                </div>
+                                <div class="kviz__head-right flex flex_justify flex_vertical">
+                                    <input class="kviz__head-input input input_small" placeholder="Введите стаж вождения" type="text" /><a class="kviz__head-btn btn btn_small btn_fill js-next-step" href="#">Далее</a>
+                                    <div class="kviz__head-text">Или выберите из&nbsp;списка ниже</div>
+                                </div>
+                            </div>
+                            <div class="kviz__list kviz__list_experience" data-value="experience">
+                                <div class="kviz__item">0</div>
+                                <div class="kviz__item">1</div>
+                                <div class="kviz__item">2</div>
+                                <div class="kviz__item">3</div>
+                                <div class="kviz__item">4</div>
+                                <div class="kviz__item">5</div>
+                                <div class="kviz__item">6</div>
+                                <div class="kviz__item">7</div>
+                                <div class="kviz__item">8</div>
+                                <div class="kviz__item">9</div>
+                                <div class="kviz__item">10</div>
+                                <div class="kviz__item">11</div>
+                                <div class="kviz__item">>11</div>
+                            </div>
+                        </div>
+                        <div class="kviz__step">
+                            <div class="kviz__circle">
+                                <svg width="42" height="42">
+                                    <circle class="circle" cx="21" cy="21" r="20" stroke-dashoffset="405"></circle>
+                                </svg>
+                                <div class="kviz__circle-number">6</div>
+                            </div>
+                            <h2 class="kviz__head-title">Характеристики авто</h2>
+                            <h3 class="kviz__head-desc h3">Выберите свой вариант</h3>
+                            <div class="kviz__parameters">
+                                <div class="kviz__parameters-left">
+                                    <div class="kviz__parameters-section flex flex_justify flex_vertical">
+                                        <div class="kviz__parameters-text">Мощность авто</div>
+                                        <input class="kviz__parameters-input input input_small js-input-power" placeholder="Введите мощность" data-value="150" type="text" />
+                                        <div class="kviz__parameters-slider kviz__parameters-slider_power js-slider-power"></div>
+                                    </div>
+                                    <div class="kviz__parameters-section flex flex_justify flex_vertical">
+                                        <div class="kviz__parameters-text">Стоимость авто</div>
+                                        <input class="kviz__parameters-input input input_small js-input-price" placeholder="Введите цену" data-value="1500000" type="text" />
+                                        <div class="kviz__parameters-slider kviz__parameters-slider_price js-slider-price"></div>
+                                    </div>
+                                </div><a class="kviz__parameters-btn js-next-step btn-round" href="#"><span class="btn-round__line"><svg xmlns="http://www.w3.org/2000/svg" width="259.66" height="263" viewBox="0 0 259.66 263"><path d="M1528.66,5844.54A131.015,131.015,0,1,1,1401,5684" transform="translate(-1269.5 -5683.5)"></path></svg></span><span class="btn-round__text">Далее</span></a>
+                                <a
+                                class="kviz__parameters-btn kviz__parameters-btn_hidden btn btn_small btn_fill js-next-step" href="#">Далее</a>
+                            </div>
+                        </div>
+                        <div class="kviz__step">
+                            <div class="kviz__circle">
+                                <svg width="42" height="42">
+                                    <circle class="circle" cx="21" cy="21" r="20" stroke-dashoffset="0"></circle>
+                                </svg>
+                                <div class="kviz__circle-number">7</div>
+                            </div>
+                            <form class="kviz__form" action="/app/mail">
+                                <input type="hidden" name="subject" value="Заявка с&nbsp;квиза">
+                                <input type="hidden" name="brend">
+                                <input type="hidden" name="model">
+                                <input type="hidden" name="year">
+                                <input type="hidden" name="age">
+                                <input type="hidden" name="experience">
+                                <input type="hidden" name="power">
+                                <input type="hidden" name="price">
+                                <h2 class="kviz__form-title">Контактные данные</h2>
+                                <div class="kviz__form-desc">Подтвердите Ваш номер телефона и&nbsp;получите расчет КАСКО</div>
+                                <div class="kviz__form-row flex flex_justify">
+                                    <div class="kviz__form-col">
+                                        <input class="kviz__form-input input input_big" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
+                                    </div>
+                                    <div class="kviz__form-col">
+                                        <button class="kviz__form-btn btn btn_big btn_stroke" type="submit">Получить расчет КАСКО</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="kviz__step">
+                            <div class="kviz__thancks">
+                                <div class="kviz__thancks-icon">
+                                    <svg id="thanks.svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 299 167.531">
+                                        <defs>
+                                            <style>
+                                                .thancks-1 {
+                                                fill: none;
+                                                stroke: #2e47ff;
+                                                stroke-width: 4px;
+                                                fill-rule: evenodd;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <path class="thancks-1" id="Эллипс_566" data-name="Эллипс 566" d="M1092.31,314.356A147.032,147.032,0,0,1,1106,376.5m-295,0a147.527,147.527,0,0,1,225.23-125.378" transform="translate(-809 -227)"></path>
+                                        <path class="thancks-1" id="Прямоугольник_567" data-name="Прямоугольник 567" d="M1104.53,244.5L956.5,392.528,904.472,340.5" transform="translate(-809 -227)"></path>
+                                    </svg>
+                                </div>
+                                <h2 class="kviz__form-title">Спасибо за&nbsp;заявку</h2>
+                                <div class="kviz__form-desc">Мы свяжемся с&nbsp;Вами в&nbsp;ближайщее время</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kviz__bottom">
+                <div class="wrap">
+                    <div class="kviz__bottom-list">
+                        <div class="kviz__bottom-item">
+                            <div class="kviz__bottom-number">1</div>
+                            <div class="kviz__bottom-content">
+                                <div class="kviz__bottom-title">Марка
+                                    <br>автомобиля</div>
+                                <div class="kviz__bottom-desc js-brend">Не указано</div>
+                            </div>
+                        </div>
+                        <div class="kviz__bottom-item">
+                            <div class="kviz__bottom-number">2</div>
+                            <div class="kviz__bottom-content">
+                                <div class="kviz__bottom-title">Модель
+                                    <br>автомобиля</div>
+                                <div class="kviz__bottom-desc js-model">Не указано</div>
+                            </div>
+                        </div>
+                        <div class="kviz__bottom-item">
+                            <div class="kviz__bottom-number">3</div>
+                            <div class="kviz__bottom-content">
+                                <div class="kviz__bottom-title">Год
+                                    <br>выпуска</div>
+                                <div class="kviz__bottom-desc js-year">Не указано</div>
+                            </div>
+                        </div>
+                        <div class="kviz__bottom-item">
+                            <div class="kviz__bottom-number">4</div>
+                            <div class="kviz__bottom-content">
+                                <div class="kviz__bottom-title">Возраст
+                                    <br>водителя</div>
+                                <div class="kviz__bottom-desc js-age">Не указано</div>
+                            </div>
+                        </div>
+                        <div class="kviz__bottom-item">
+                            <div class="kviz__bottom-number">5</div>
+                            <div class="kviz__bottom-content">
+                                <div class="kviz__bottom-title">Стаж
+                                    <br>вождения</div>
+                                <div class="kviz__bottom-desc js-experience">Не указано</div>
+                            </div>
+                        </div>
+                        <div class="kviz__bottom-item">
+                            <div class="kviz__bottom-number">6</div>
+                            <div class="kviz__bottom-content">
+                                <div class="kviz__bottom-title">Характеристики
+                                    <br>авто</div>
+                                <div class="kviz__bottom-desc"><span class="js-power">150 л.с.</span>
+                                    <br><span class="js-price">1 500 000 руб.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kviz__bottom-item">
+                            <div class="kviz__bottom-number">7</div>
+                            <div class="kviz__bottom-content">
+                                <div class="kviz__bottom-desc">Контактные
+                                    <br>данные</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modals mfp-hide" id="recall"></div>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVfaEXUdaqazXAymi_chvWL5MmmAIL2h8"></script>
+    <script src="/app/js/app.js?v=1579817754915"></script>
+</body>
+
+</html>

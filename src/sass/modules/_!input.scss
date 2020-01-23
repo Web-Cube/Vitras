@@ -1,0 +1,26 @@
+.input {
+    background: #fff;
+	border: 1px solid #d5dce8;
+	color: $dark-blue;
+	font-size: 16rem;
+	font-family: 'Montserrat';
+	font-weight: 500;
+	&::placeholder {
+		color: $dark-blue;
+	}
+	&_small {
+		height: 60rem;
+		padding-left: 25rem;
+		border-radius: 15px;
+	}
+	&_big {
+		height: 80rem;
+		font-size: 20rem;
+		border-radius: 20px;
+	}
+}
+
+
+@include max-screen($large_mobile) {
+
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Продление</title>
+    <link rel="stylesheet" href="/app/css/app.css?v=1579817756739">
+    <script>
+        function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
+    </script>
+</head>
+
+<body>
+    <div class="main-wrap">
+        <div class="kviz">
+            <div class="kviz__top">
+                <header class="header">
+                    <div class="header__wrap wrap flex flex_vertical flex_justify">
+                        <a class="header__logo" href="/main.html">
+                            <picture>
+                                <source type="image/webp" srcset="/app/img/logo.webp">
+                                    <img src="/app/img/logo.png" class="header__logo-pic" alt="" role="presentation" />
+                            </picture><span class="header__logo-text">страхование</span>
+                        </a>
+                        <nav class="header__nav flex"><a class="header__link" href="/kviz.html">Расчет</a><a class="header__link js-scroll-to" href="#scam">Обман</a><a class="header__link js-scroll-to" href="#car">Машина</a><a class="header__link js-scroll-to" href="#kasko">Каско</a>
+                            <a
+                            class="header__link js-scroll-to" href="#contact">Контакты</a>
+                        </nav>
+                        <div class="header__call flex flex_vertical"><a class="header__phone" href="tel:+7 (812) 770-22-65">+7 (812) 770-22-65</a><a class="header__btn btn btn_stroke btn_small js-modal" href="#recall">заказать звонок</a>
+                        </div>
+                        <div class="header__burger">
+                            <div class="header__burger-line"></div>
+                            <div class="header__burger-line"></div>
+                            <div class="header__burger-line"></div>
+                        </div>
+                    </div>
+                    <div class="header__mobile">
+                        <div class="header__mobile-nav"><a class="header__mobile-link" href="/kviz.html">Расчет</a><a class="header__mobile-link js-scroll-to" href="#scam">Обман</a><a class="header__mobile-link js-scroll-to" href="#car">Машина</a><a class="header__mobile-link js-scroll-to"
+                            href="#kasko">Каско</a><a class="header__mobile-link js-scroll-to" href="#contact">Контакты</a>
+                        </div><a class="header__mobile-phone" href="tel:+7 (812) 770-22-65">+7 (812) 770-22-65</a><a class="header__mobile-btn btn btn_fill btn_small js-modal" href="#recall">заказать звонок</a>
+                    </div>
+                </header>
+            </div>
+            <div class="kviz__center">
+                <div class="kviz__wrap wrap">
+                    <div class="kviz__steps">
+                        <div class="kviz__step is-active">
+                            <form class="kviz__form" action="/app/mail">
+                                <input type="hidden" name="subject" value="Заявка на&nbsp;продление">
+                                <h2 class="kviz__form-title">Контактные данные</h2>
+                                <div class="kviz__form-desc">Подтвердите Ваш номер телефона и&nbsp;получите расчет продления полиса КАСКО</div>
+                                <div class="kviz__form-row flex flex_justify">
+                                    <div class="kviz__form-col">
+                                        <div class="kviz__select select">
+                                            <div class="select__head">
+                                                <input class="select__label" type="text" name="company" value="Страховая компания" autocomplete="off" />
+                                                <div class="select__icon">
+                                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 11.625 7.032">
+                                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="select__list">
+                                                <div class="select__item">Ресо</div>
+                                                <div class="select__item">Росгосстрах</div>
+                                                <div class="select__item">Ренессанс</div>
+                                                <div class="select__item">Либерти</div>
+                                                <div class="select__item">ВСК</div>
+                                                <div class="select__item">ОСК</div>
+                                                <div class="select__item">Согласие</div>
+                                                <div class="select__item">Ингосстрах</div>
+                                                <div class="select__item">Альфастрахование</div>
+                                                <div class="select__item">Зетта страхование</div>
+                                                <div class="select__item">Югория</div>
+                                                <div class="select__item">Капитал полис</div>
+                                                <div class="select__item">Тинькофф</div>
+                                                <div class="select__item">Эрго</div>
+                                                <div class="select__item">Гайде</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="kviz__form-col">
+                                        <input class="kviz__form-input input input_big" type="text" name="iin" placeholder="Серия и&nbsp;номер полиса" />
+                                    </div>
+                                    <div class="kviz__form-col">
+                                        <input class="kviz__form-input input input_big" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
+                                    </div>
+                                    <div class="kviz__form-col">
+                                        <button class="kviz__form-btn btn btn_big btn_stroke" type="submit" name="prolongation">Продлить КАСКО</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="kviz__step">
+                            <div class="kviz__thancks">
+                                <div class="kviz__thancks-icon">
+                                    <svg id="thanks.svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 299 167.531">
+                                        <defs>
+                                            <style>
+                                                .thancks-1 {
+                                                fill: none;
+                                                stroke: #2e47ff;
+                                                stroke-width: 4px;
+                                                fill-rule: evenodd;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <path class="thancks-1" id="Эллипс_566" data-name="Эллипс 566" d="M1092.31,314.356A147.032,147.032,0,0,1,1106,376.5m-295,0a147.527,147.527,0,0,1,225.23-125.378" transform="translate(-809 -227)"></path>
+                                        <path class="thancks-1" id="Прямоугольник_567" data-name="Прямоугольник 567" d="M1104.53,244.5L956.5,392.528,904.472,340.5" transform="translate(-809 -227)"></path>
+                                    </svg>
+                                </div>
+                                <h2 class="kviz__form-title">Спасибо за&nbsp;заявку</h2>
+                                <div class="kviz__form-desc">Мы свяжемся с&nbsp;Вами в&nbsp;ближайщее время</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modals mfp-hide" id="recall"></div>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVfaEXUdaqazXAymi_chvWL5MmmAIL2h8"></script>
+    <script src="/app/js/app.js?v=1579817756751"></script>
+</body>
+
+</html>

@@ -5,22 +5,36 @@
 	justify-content: center;
 	padding: 15rem;
 	border-radius: 20px;
-	
+	border: 0;
+	font-family: 'Montserrat';
+	cursor: pointer;
+	transition: ease 0.15s;
 	&_fill {
-		background: $blue;
 		color: #fff;
+		background: transparent;
+		color: $blue;
+		border: 1px solid $blue;
+		&:hover {
+			background: $blue;
+			color: #fff;
+		}
 	}
 	
 	&_stroke {
 		background: transparent;
 		color: $blue;
 		border: 1px solid $blue;
+		&:hover {
+			background: $blue;
+			color: #fff;
+		}
 	}
 	
 	&_small {
 		height: 60rem;
 		font-size: 14rem;
 		font-weight: 500;
+		border-radius: 15px;
 	}
 	
 	&_big {
@@ -32,7 +46,7 @@
 	&__icon-docs {
 		width: 27rem;
 		height: 32rem;
-		fill: #fff;
+		fill: $blue;
 		margin-left: 40rem;
 	}
 	
@@ -41,6 +55,11 @@
 		height: 33rem;
 		fill: $blue;
 		margin-left: 38rem;
+	}
+	&:hover {
+		.btn__icon-docs, .btn__icon-restore {
+			fill: #fff;
+		}
 	}
 }
 

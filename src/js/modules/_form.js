@@ -58,7 +58,10 @@ $(()=>{
 					url: '/app/mail/',
 					data: data,
 					success: function(data) {
-						$(form)[0].reset()
+						$(form)[0].reset();
+						if ( $("form").hasClass("kviz__form") ) {
+							$(".kviz__step.is-active").removeClass("is-active").next().addClass('is-active');
+						}
 					}
 				});
 

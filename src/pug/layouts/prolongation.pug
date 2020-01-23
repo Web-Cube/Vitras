@@ -1,0 +1,56 @@
++b.kviz
+	+e.top
+		include header
+	+e.center
+		+e.wrap.wrap
+			+e.steps
+				+e.step.is-active
+					+e.FORM.form(action="/app/mail")
+						input(type="hidden",name="subject",value="Заявка на продление")
+						+e.H2.form-title Контактные данные
+						+e.form-desc Подтвердите Ваш номер телефона и получите расчет продления полиса КАСКО
+						+e.form-row.flex_justify
+							+e.form-col
+								+e.select.select__
+									+e.head
+										+e.INPUT.label(type="text",name="company",value="Страховая компания",autocomplete="off")
+										+e.icon
+											+icon('select__arrow','0 0 11.625 7.032')
+									+e.list
+										+e.item  Ресо
+										+e.item  Росгосстрах
+										+e.item  Ренессанс
+										+e.item  Либерти
+										+e.item  ВСК
+										+e.item  ОСК
+										+e.item  Согласие
+										+e.item  Ингосстрах
+										+e.item  Альфастрахование
+										+e.item  Зетта страхование
+										+e.item  Югория
+										+e.item  Капитал полис
+										+e.item  Тинькофф
+										+e.item  Эрго
+										+e.item  Гайде
+							+e.form-col
+								+e.INPUT.form-input.input._big(type="text",name="iin",placeholder="Серия и номер полиса")
+							+e.form-col
+								+e.INPUT.form-input.input._big(type="tel",name="phone",placeholder="+7 (___) ___-__-__")
+							+e.form-col
+								+e.BUTTON.form-btn.btn._big._stroke(type="submit",name="prolongation") Продлить КАСКО
+				+e.step
+					+e.thancks
+						+e.thancks-icon
+							svg(id='thanks.svg', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 299 167.531')
+								defs
+									style.
+										.thancks-1 {
+										fill: none;
+										stroke: #2e47ff;
+										stroke-width: 4px;
+										fill-rule: evenodd;
+										}
+								path.thancks-1(id='Эллипс_566', data-name='Эллипс 566', d='M1092.31,314.356A147.032,147.032,0,0,1,1106,376.5m-295,0a147.527,147.527,0,0,1,225.23-125.378', transform='translate(-809 -227)')
+								path.thancks-1(id='Прямоугольник_567', data-name='Прямоугольник 567', d='M1104.53,244.5L956.5,392.528,904.472,340.5', transform='translate(-809 -227)')
+						+e.H2.form-title Спасибо за заявку
+						+e.form-desc Мы свяжемся с Вами в ближайщее время

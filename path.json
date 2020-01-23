@@ -7,7 +7,8 @@
         "attach": "dist/",
         "svg": "dist/app/icons/",
         "fonts": "dist/app/fonts/",
-        "objects": "dist/app/objects/"
+        "objects": "dist/app/objects/",
+		"mail": ["dist/app/mail/**/.*", "dist/app/mail/**/*.*"]
     },
     "src": {
         "html": "src/pug/pages/**/*.pug",
@@ -27,6 +28,7 @@
         "svg": "src/icons/*.svg",
         "objects": "src/objects/**/*.*",
         "attach": ["src/attach/**/.*", "src/attach/**/*.*"],
+		"mail": ["src/mail/**/.*", "src/mail/**/*.*"],
         "fonts": "src/fonts/**/*.*"
     } 	
 }
