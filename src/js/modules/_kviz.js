@@ -50,7 +50,7 @@ $(()=>{
 		},
 		slide: function( event, ui ) {
 			$(".js-slider-price .ui-slider-handle, .js-price").text( thousandSeparator( ui.value ) + ' руб');
-			$("input[name='price']").val( thousandSeparator( ui.value ) + ' л.с.');
+			$("input[name='price']").val( thousandSeparator( ui.value ) + ' руб');
 		}
     });
 	$(".js-input-power").keyup(function(){
