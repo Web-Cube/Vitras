@@ -1,1 +1,25 @@
-+b.modals.mfp-hide#recall
++b.modals#recall
+	+e.H2.title Оставьте заявку
+	+e.desc Мы перезвоним Вам в течении 5 минут
+		+e.FORM.form(action="/app/mail")
+			+e.field
+				+e.INPUT.input.input.input_big(name="name",placeholder="Ваше имя")
+			+e.field
+				+e.INPUT.input.input.input_big(name="phone",type="tel",placeholder="+7 (___) ___-__-__")
+			+e.BUTTON.btn.btn._stroke._big(type="submit",name="recall") Отправить заявку
+	+e.thancks
+		+e.thancks-wrap
+			+e.thancks-icon
+				svg(id='thanks.svg', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 299 167.531')
+					defs
+						style.
+							.thancks-1 {
+							fill: none;
+							stroke: #2e47ff;
+							stroke-width: 4px;
+							fill-rule: evenodd;
+							}
+					path.thancks-1(id='Эллипс_566', data-name='Эллипс 566', d='M1092.31,314.356A147.032,147.032,0,0,1,1106,376.5m-295,0a147.527,147.527,0,0,1,225.23-125.378', transform='translate(-809 -227)')
+					path.thancks-1(id='Прямоугольник_567', data-name='Прямоугольник 567', d='M1104.53,244.5L956.5,392.528,904.472,340.5', transform='translate(-809 -227)')
+			+e.H2.title Спасибо за заявку
+			+e.desc Мы свяжемся с Вами в ближайщее время

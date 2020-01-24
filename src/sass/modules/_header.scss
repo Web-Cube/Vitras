@@ -9,8 +9,16 @@
 		text-align: center;
 		transform: translateY(-50%);
 		
+		&-pic {
+			.st2 {
+				fill: $dark-blue;
+			}
+		}
+		
 		&-text {
 			display: block;
+			margin-top: 3rem;
+			color: $dark-blue;
 		}
 	}
 	&__link {

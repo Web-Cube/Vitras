@@ -13,12 +13,18 @@
 	// Тема письма
 	if (isset($_POST['prolongation'])) {
 		$mail->Subject = 'Заявка на продление';
+	} 
+	if (isset($_POST['recall'])) {
+		$mail->Subject = 'Заявка на обратный звонок';
 	} else {
 		$mail->Subject = 'Заявка с квиза';
 	}
 	// Тело письма
 	if (isset($_POST['prolongation'])) {
 		$body = "Страховая компания: {$_POST['company']}<br> Серия и номер полиса: {$_POST['iin']}<br> Телефон:: {$_POST['phone']}";
+	}
+	if (isset($_POST['prolongation'])) {
+		$body = "Имя: {$_POST['name']}<br> Телефон:: {$_POST['phone']}";
 	} else {
 		$body = "Марка автомобиля: {$_POST['brend']}<br> Модель автомобиля: {$_POST['model']}<br> Год выпуска: {$_POST['year']} <br> Возраст водителя: {$_POST['age']} <br> Стаж вождения: {$_POST['experience']} <br> Характеристики авто: {$_POST['power']} {$_POST['price']} <br> Телефон: {$_POST['phone']}";
 	}

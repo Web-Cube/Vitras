@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Квиз</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1579849749822">
+    <link rel="stylesheet" href="/app/css/app.css?v=1579873251529">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -17,13 +17,7 @@
         <div class="kviz">
             <div class="kviz__top">
                 <header class="header">
-                    <div class="header__wrap wrap flex flex_vertical flex_justify">
-                        <a class="header__logo" href="/main.html">
-                            <picture>
-                                <source type="image/webp" srcset="/app/img/logo.webp">
-                                    <img src="/app/img/logo.png" class="header__logo-pic" alt="" role="presentation" />
-                            </picture><span class="header__logo-text">страхование</span>
-                        </a>
+                    <div class="header__wrap wrap flex flex_vertical flex_justify"><a class="header__logo" href="/main.html"><span class="header__logo-pic js-svg" data-svg-src="/app/objects/w_logo.svg"></span><span class="header__logo-text">страхование</span></a>
                         <nav class="header__nav flex"><a class="header__link" href="/kviz.html">Расчет</a><a class="header__link js-scroll-to" href="#scam">Обман</a><a class="header__link js-scroll-to" href="#car">Машина</a><a class="header__link js-scroll-to" href="#kasko">Каско</a>
                             <a
                             class="header__link js-scroll-to" href="#contact">Контакты</a>
@@ -468,11 +462,46 @@
                 </div>
             </div>
         </div>
-        <div class="modals mfp-hide" id="recall"></div>
+        <div class="modals" id="recall">
+            <h2 class="modals__title">Оставьте заявку</h2>
+            <div class="modals__desc">Мы перезвоним Вам в&nbsp;течении 5 минут
+                <form class="modals__form" action="/app/mail">
+                    <div class="modals__field">
+                        <input class="modals__input input input input_big" name="name" placeholder="Ваше имя" type="text" />
+                    </div>
+                    <div class="modals__field">
+                        <input class="modals__input input input input_big" name="phone" type="tel" placeholder="+7 (___) ___-__-__" />
+                    </div>
+                    <button class="modals__btn btn btn_stroke btn_big" type="submit" name="recall">Отправить заявку</button>
+                </form>
+            </div>
+            <div class="modals__thancks">
+                <div class="modals__thancks-wrap">
+                    <div class="modals__thancks-icon">
+                        <svg id="thanks.svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 299 167.531">
+                            <defs>
+                                <style>
+                                    .thancks-1 {
+                                    fill: none;
+                                    stroke: #2e47ff;
+                                    stroke-width: 4px;
+                                    fill-rule: evenodd;
+                                    }
+                                </style>
+                            </defs>
+                            <path class="thancks-1" id="Эллипс_566" data-name="Эллипс 566" d="M1092.31,314.356A147.032,147.032,0,0,1,1106,376.5m-295,0a147.527,147.527,0,0,1,225.23-125.378" transform="translate(-809 -227)"></path>
+                            <path class="thancks-1" id="Прямоугольник_567" data-name="Прямоугольник 567" d="M1104.53,244.5L956.5,392.528,904.472,340.5" transform="translate(-809 -227)"></path>
+                        </svg>
+                    </div>
+                    <h2 class="modals__title">Спасибо за&nbsp;заявку</h2>
+                    <div class="modals__desc">Мы свяжемся с&nbsp;Вами в&nbsp;ближайщее время</div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVfaEXUdaqazXAymi_chvWL5MmmAIL2h8"></script>
-    <script src="/app/js/app.js?v=1579849749858"></script>
+    <script src="/app/js/app.js?v=1579873251573"></script>
 </body>
 
 </html>
