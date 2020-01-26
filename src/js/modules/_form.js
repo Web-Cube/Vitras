@@ -61,10 +61,10 @@ $(()=>{
 						$(form)[0].reset();
 						if ( $("form").hasClass("kviz__form") ) {
 							$(".kviz__step.is-active").removeClass("is-active").next().addClass('is-active');
+							$(".kviz__bottom-item:last-child .kviz__bottom-circle").addClass("is-active");
 						}
 						if ( $("form").hasClass("modals__form") ) {
 							$(".modals__thancks").addClass("is-active");
-							//setTimeout('$(".modals__thancks").removeClass("is-active");', 3000);
 						}
 					}
 				});

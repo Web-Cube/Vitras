@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Квиз</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1579873251529">
+    <link rel="stylesheet" href="/app/css/app.css?v=1579900136240">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -402,7 +402,12 @@
                 <div class="wrap">
                     <div class="kviz__bottom-list">
                         <div class="kviz__bottom-item">
-                            <div class="kviz__bottom-number">1</div>
+                            <div class="kviz__bottom-circle">
+                                <svg width="42" height="42">
+                                    <circle class="circle" cx="21" cy="21" r="20" stroke-dashoffset="480"></circle>
+                                </svg>
+                                <div class="kviz__bottom-number">1</div>
+                            </div>
                             <div class="kviz__bottom-content">
                                 <div class="kviz__bottom-title">Марка
                                     <br>автомобиля</div>
@@ -410,7 +415,12 @@
                             </div>
                         </div>
                         <div class="kviz__bottom-item">
-                            <div class="kviz__bottom-number">2</div>
+                            <div class="kviz__bottom-circle">
+                                <svg width="42" height="42">
+                                    <circle class="circle" cx="21" cy="21" r="20" stroke-dashoffset="465"></circle>
+                                </svg>
+                                <div class="kviz__bottom-number">2</div>
+                            </div>
                             <div class="kviz__bottom-content">
                                 <div class="kviz__bottom-title">Модель
                                     <br>автомобиля</div>
@@ -418,7 +428,12 @@
                             </div>
                         </div>
                         <div class="kviz__bottom-item">
-                            <div class="kviz__bottom-number">3</div>
+                            <div class="kviz__bottom-circle">
+                                <svg width="42" height="42">
+                                    <circle class="circle" cx="21" cy="21" r="20" stroke-dashoffset="450"></circle>
+                                </svg>
+                                <div class="kviz__bottom-number">3</div>
+                            </div>
                             <div class="kviz__bottom-content">
                                 <div class="kviz__bottom-title">Год
                                     <br>выпуска</div>
@@ -426,7 +441,12 @@
                             </div>
                         </div>
                         <div class="kviz__bottom-item">
-                            <div class="kviz__bottom-number">4</div>
+                            <div class="kviz__bottom-circle">
+                                <svg width="42" height="42">
+                                    <circle class="circle" cx="21" cy="21" r="20" stroke-dashoffset="435"></circle>
+                                </svg>
+                                <div class="kviz__bottom-number">4</div>
+                            </div>
                             <div class="kviz__bottom-content">
                                 <div class="kviz__bottom-title">Возраст
                                     <br>водителя</div>
@@ -434,7 +454,12 @@
                             </div>
                         </div>
                         <div class="kviz__bottom-item">
-                            <div class="kviz__bottom-number">5</div>
+                            <div class="kviz__bottom-circle">
+                                <svg width="42" height="42">
+                                    <circle class="circle" cx="21" cy="21" r="20" stroke-dashoffset="420"></circle>
+                                </svg>
+                                <div class="kviz__bottom-number">5</div>
+                            </div>
                             <div class="kviz__bottom-content">
                                 <div class="kviz__bottom-title">Стаж
                                     <br>вождения</div>
@@ -442,19 +467,28 @@
                             </div>
                         </div>
                         <div class="kviz__bottom-item">
-                            <div class="kviz__bottom-number">6</div>
+                            <div class="kviz__bottom-circle">
+                                <svg width="42" height="42">
+                                    <circle class="circle" cx="21" cy="21" r="20" stroke-dashoffset="405"></circle>
+                                </svg>
+                                <div class="kviz__bottom-number">6</div>
+                            </div>
                             <div class="kviz__bottom-content">
                                 <div class="kviz__bottom-title">Характеристики
                                     <br>авто</div>
-                                <div class="kviz__bottom-desc"><span class="js-power">150 л.с.</span>
-                                    <br><span class="js-price">1 500 000 руб.</span>
-                                </div>
+                                <div class="kviz__bottom-desc js-power">150 л.с.</div>
+                                <div class="kviz__bottom-desc js-price">1 500 000 руб.</div>
                             </div>
                         </div>
                         <div class="kviz__bottom-item">
-                            <div class="kviz__bottom-number">7</div>
+                            <div class="kviz__bottom-circle">
+                                <svg width="42" height="42">
+                                    <circle class="circle" cx="21" cy="21" r="20" stroke-dashoffset="0"></circle>
+                                </svg>
+                                <div class="kviz__bottom-number">7</div>
+                            </div>
                             <div class="kviz__bottom-content">
-                                <div class="kviz__bottom-desc">Контактные
+                                <div class="kviz__bottom-title">Контактные
                                     <br>данные</div>
                             </div>
                         </div>
@@ -462,7 +496,7 @@
                 </div>
             </div>
         </div>
-        <div class="modals" id="recall">
+        <div class="modals mfp-hide" id="recall">
             <h2 class="modals__title">Оставьте заявку</h2>
             <div class="modals__desc">Мы перезвоним Вам в&nbsp;течении 5 минут
                 <form class="modals__form" action="/app/mail">
@@ -501,7 +535,7 @@
     </div>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVfaEXUdaqazXAymi_chvWL5MmmAIL2h8"></script>
-    <script src="/app/js/app.js?v=1579873251573"></script>
+    <script src="/app/js/app.js?v=1579900136274"></script>
 </body>
 
 </html>

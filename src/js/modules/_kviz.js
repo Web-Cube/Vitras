@@ -12,6 +12,9 @@ $(()=>{
 	});
 	
 	$(".js-next-step").click(function(){
+		var index = $(this).closest(".kviz__step").index();
+		
+		$(".kviz__bottom-item:eq(" + index + ") .kviz__bottom-circle").addClass('is-active');
 		$(this).closest(".kviz__step").removeClass("is-active").next().addClass('is-active');
 		return false;
 	});
@@ -20,7 +23,7 @@ $(()=>{
 		var this_val = $(this).text();
 		var this_name = $(this).closest(".kviz__list").attr("data-value");
 		
-		$(".js-" + this_name).text( this_val );
+		$(".js-" + this_name).text( this_val ).addClass("is-active").prev().addClass("is-active");
 		$("input[name='" + this_name + "']").val( this_val );
 		$(this).closest(".kviz__step").find(".js-next-step").click();
 	});
@@ -37,7 +40,9 @@ $(()=>{
 		slide: function( event, ui ) {
 			$(".js-slider-power .ui-slider-handle, .js-power").text( thousandSeparator( ui.value ) + ' л.с.');
 			$("input[name='power']").val( thousandSeparator( ui.value ) + ' л.с.');
+			$(".js-power").addClass("is-active").prev().addClass("is-active");
 		}
+		
     });
 	$(".js-slider-price").slider({
 		step: 50000,
@@ -51,6 +56,7 @@ $(()=>{
 		slide: function( event, ui ) {
 			$(".js-slider-price .ui-slider-handle, .js-price").text( thousandSeparator( ui.value ) + ' руб');
 			$("input[name='price']").val( thousandSeparator( ui.value ) + ' руб');
+			$(".js-price").addClass("is-active");
 		}
     });
 	$(".js-input-power").keyup(function(){
@@ -67,7 +73,7 @@ $(()=>{
 			value: $(this).attr("data-value")
 		});
 		
-		$(".js-slider-power .ui-slider-handle, .js-power").text( thousandSeparator( $(this).attr("data-value") ) + ' л.с.');
+		$(".js-slider-power .ui-slider-handle, .js-power").text( thousandSeparator( $(this).attr("data-value") ) + ' л.с.')
 		$("input[name='power']").val( thousandSeparator( $(this).attr("data-value") ) + ' л.с.');
 		
 	});

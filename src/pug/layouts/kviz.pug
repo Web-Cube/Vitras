@@ -324,7 +324,10 @@
 		.wrap
 			+e.bottom-list
 				+e.bottom-item
-					+e.bottom-number 1
+					+e.bottom-circle
+						svg(width='42', height='42')
+							circle.circle(cx='21', cy='21', r='20', stroke-dashoffset='480')
+						+e.bottom-number 1
 					+e.bottom-content
 						+e.bottom-title
 							| Марка
@@ -332,7 +335,10 @@
 							| автомобиля
 						+e.bottom-desc.js-brend Не указано
 				+e.bottom-item
-					+e.bottom-number 2
+					+e.bottom-circle
+						svg(width='42', height='42')
+							circle.circle(cx='21', cy='21', r='20', stroke-dashoffset='465')
+						+e.bottom-number 2
 					+e.bottom-content
 						+e.bottom-title
 							| Модель
@@ -340,7 +346,10 @@
 							| автомобиля
 						+e.bottom-desc.js-model Не указано
 				+e.bottom-item
-					+e.bottom-number 3
+					+e.bottom-circle
+						svg(width='42', height='42')
+							circle.circle(cx='21', cy='21', r='20', stroke-dashoffset='450')
+						+e.bottom-number 3
 					+e.bottom-content
 						+e.bottom-title
 							| Год
@@ -348,7 +357,10 @@
 							| выпуска
 						+e.bottom-desc.js-year Не указано
 				+e.bottom-item
-					+e.bottom-number 4
+					+e.bottom-circle
+						svg(width='42', height='42')
+							circle.circle(cx='21', cy='21', r='20', stroke-dashoffset='435')
+						+e.bottom-number 4
 					+e.bottom-content
 						+e.bottom-title
 							| Возраст
@@ -356,7 +368,10 @@
 							| водителя
 						+e.bottom-desc.js-age Не указано
 				+e.bottom-item
-					+e.bottom-number 5
+					+e.bottom-circle
+						svg(width='42', height='42')
+							circle.circle(cx='21', cy='21', r='20', stroke-dashoffset='420')
+						+e.bottom-number 5
 					+e.bottom-content
 						+e.bottom-title
 							| Стаж
@@ -364,20 +379,24 @@
 							| вождения
 						+e.bottom-desc.js-experience Не указано
 				+e.bottom-item
-					+e.bottom-number 6
+					+e.bottom-circle
+						svg(width='42', height='42')
+							circle.circle(cx='21', cy='21', r='20', stroke-dashoffset='405')
+						+e.bottom-number 6
 					+e.bottom-content
 						+e.bottom-title
 							| Характеристики
 							br
 							| авто
-						+e.bottom-desc
-							span.js-power 150 л.с.
-							br
-							span.js-price 1 500 000 руб.
+						+e.bottom-desc.js-power 150 л.с.
+						+e.bottom-desc.js-price 1 500 000 руб.
 				+e.bottom-item
-					+e.bottom-number 7
+					+e.bottom-circle
+						svg(width='42', height='42')
+							circle.circle(cx='21', cy='21', r='20', stroke-dashoffset='0')
+						+e.bottom-number 7
 					+e.bottom-content
-						+e.bottom-desc
+						+e.bottom-title
 							| Контактные
 							br
 							| данные
