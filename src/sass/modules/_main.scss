@@ -20,10 +20,14 @@
 		font-size: 18rem;
 		font-weight: 500;
 		line-height: (29/18)*1;
+
+		@include max-screen($large_desktop) {
+			font-size: 20rem;
+		}
 	}
 	&__btn {
-		width: 100%;
-		max-width: 250rem;
+		max-width: 100%;
+		width: 250rem;
 		margin-top: 40rem;
 	}
 	&__car {
@@ -31,6 +35,8 @@
 		z-index: 2;
 		max-width: none;
 		width: 948rem;
+
+		animation: carMoving 5s ease 1;
 	}
 	&__percent-back {
 		position: absolute;
@@ -39,7 +45,8 @@
 		font-size: 400rem;
 		font-weight: 600;
 		line-height: 0.75;
-		opacity: 0.1;
+		// opacity: 0.1;
+		color: rgba(#18173f, .1);
 	}
 	&__box {
 		position: absolute;
@@ -53,6 +60,10 @@
 		border-radius: 100%;
 		text-align: center;
 		transform: translateX(-110rem);
+
+
+		// visibility: hidden;
+
 		&-text {
 			font-size: 18rem;
 			font-weight: 500;
@@ -111,6 +122,20 @@
 		&-number {
 			position: absolute;
 			left: -25rem;
+		}
+
+		@include max-screen($large_desktop) {
+			&-text{
+				font-size: 19rem;
+			}
+
+			&-icon{
+				height: 40rem;
+				svg{
+					width: auto!important;
+					height: 100%;
+				}
+			}
 		}
 	}
 	&__mobile {

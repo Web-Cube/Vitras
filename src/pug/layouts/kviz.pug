@@ -15,7 +15,11 @@
 								| Марка автомобиля
 						+e.head-right.flex._justify._vertical
 							+e.INPUT.head-input.input._small(placeholder="Введите марку автомобиля",v-model="company")
-							+e.A.head-btn.btn._small._fill.js-next-step(href="#") Далее
+							.magnetic-wrapper
+								.magnetic-inner
+									+e.A.head-btn.btn__._small._fill.js-next-step(href="#") 
+										+e.SPAN.back.js-circles
+										+e.SPAN.text Далее
 							+e.head-text Или выберите из списка ниже
 					+e.list._brend(data-value="brend")
 						+e.item  Acura 
@@ -101,7 +105,11 @@
 								| Модель автомобиля
 						+e.head-right.flex._justify._vertical
 							+e.INPUT.head-input.input._small(placeholder="Введите модель автомобиля")
-							+e.A.head-btn.btn._small._fill.js-next-step(href="#") Далее
+							.magnetic-wrapper
+								.magnetic-inner
+									+e.A.head-btn.btn__._small._fill.js-next-step(href="#") 
+										+e.SPAN.back.js-circles
+										+e.SPAN.text Далее
 							+e.head-text Или выберите из списка ниже
 					+e.list._model(data-value="model")
 						+e.item  A1 
@@ -142,7 +150,11 @@
 								| Год выпуска
 						+e.head-right.flex._justify._vertical
 							+e.INPUT.head-input.input._small(placeholder="Введите год выпуска")
-							+e.A.head-btn.btn._small._fill.js-next-step(href="#") Далее
+							.magnetic-wrapper
+								.magnetic-inner
+									+e.A.head-btn.btn__._small._fill.js-next-step(href="#") 
+										+e.SPAN.back.js-circles
+										+e.SPAN.text Далее
 							+e.head-text Или выберите из списка ниже
 					+e.list._year(data-value="year")
 						+e.item  2000 
@@ -176,7 +188,11 @@
 								| Возраст водителя
 						+e.head-right.flex._justify._vertical
 							+e.INPUT.head-input.input._small(placeholder="Введите возраст водителя")
-							+e.A.head-btn.btn._small._fill.js-next-step(href="#") Далее
+							.magnetic-wrapper
+								.magnetic-inner
+									+e.A.head-btn.btn__._small._fill.js-next-step(href="#") 
+										+e.SPAN.back.js-circles
+										+e.SPAN.text Далее
 							+e.head-text Или выберите из списка ниже
 					+e.list._age(data-value="age")
 						+e.item  19 
@@ -242,7 +258,11 @@
 								| Стаж вождения
 						+e.head-right.flex._justify._vertical
 							+e.INPUT.head-input.input._small(placeholder="Введите стаж вождения")
-							+e.A.head-btn.btn._small._fill.js-next-step(href="#") Далее
+							.magnetic-wrapper
+								.magnetic-inner
+									+e.A.head-btn.btn__._small._fill.js-next-step(href="#") 
+										+e.SPAN.back.js-circles
+										+e.SPAN.text Далее
 							+e.head-text Или выберите из списка ниже
 					+e.list._experience(data-value="experience")
 						+e.item 0
@@ -282,7 +302,11 @@
 									path(d='M1528.66,5844.54A131.015,131.015,0,1,1,1401,5684', transform='translate(-1269.5 -5683.5)')
 							+e.text
 								| Далее
-						+e.A.parameters-btn._hidden.btn._small._fill.js-next-step(href="#") Далее
+						.magnetic-wrapper
+							.magnetic-inner
+								+e.A.parameters-btn._hidden.btn__._small._fill.js-next-step(href="#") 
+									+e.SPAN.back.js-circles
+									+e.SPAN.text Далее
 				+e.step
 					+e.circle
 						svg(width='42', height='42')
@@ -303,7 +327,11 @@
 							+e.form-col
 								+e.INPUT.form-input.input._big(type="tel",name="phone",placeholder="+7 (___) ___-__-__")
 							+e.form-col
-								+e.BUTTON.form-btn.btn._big._stroke(type="submit") Получить расчет КАСКО
+								.magnetic-wrapper
+									.magnetic-inner
+										+e.BUTTON.form-btn.btn__._big._stroke(type="submit") 
+											+e.SPAN.back.js-circles
+											+e.SPAN.text Получить расчет КАСКО
 				+e.step
 					+e.thancks
 						+e.thancks-icon

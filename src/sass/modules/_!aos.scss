@@ -1,0 +1,144 @@
+.line{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+	
+	&.is-center{
+		justify-content: center;
+	}
+
+    @include max-screen($small_tablet) {
+    	display: inline;
+    }	
+}
+.word{
+	display: inline-block;
+	@include max-screen($small_tablet) {
+		display: inline-block;
+	}	
+}
+
+[data-aos]{
+
+	.css-fade{
+		opacity: 0;
+		transition: ease .8s;
+
+		@for $i from 1 to 10 {
+			&:nth-child(#{$i}) { transition-delay: $i * 0.1s; }
+		}
+	}
+
+	.css-totop{
+		transform: translateY(25px);
+		opacity: 0;
+		transition: ease .8s;
+
+		@for $i from 1 to 10 {
+			&:nth-child(#{$i}) { transition-delay: $i * 0.1s; }
+		}
+	}
+
+	.line{
+		overflow: hidden;
+	    // line-height: 1.2em;
+	    // margin-top: -0.1em;
+
+
+	    &:not(:first-child){
+	    	// margin-top: -0.2em;
+	    }
+	}
+	.word{
+		// display: inline-block;
+		transform: translateY(100%);
+		opacity: .6;
+		transition: ease .8s;
+
+		@for $i from 1 to 50 {
+			&:nth-child(#{$i}) { transition-delay: $i * 0.05s; }
+		}
+	}	
+
+	&.aos-animate{
+		.word{
+			transform: translateY(0%);
+			opacity: 1;
+		}
+
+		.css-fade{
+			opacity: 1;
+		}
+
+		.css-totop{
+			opacity: 1;
+			transform: translateY(0); 
+		}
+
+	}
+}
+
+[data-aos="main-aos"]{
+	.main{
+		&__car{
+			transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1) .2s;
+			transform: translateX(100vw);
+			// filter: blur(5px);
+
+		}
+
+		&__box{
+			transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) .7s;
+		}
+	}
+
+
+	&.aos-animate{
+		.main{
+			&__car{
+				// filter: blur(0px);
+				transform: translateX(0vw);
+
+			}
+		}
+	}
+}
+
+
+[data-aos="header-aos"]{
+
+	.header__link{
+		transform: translateY(-20px);
+		opacity: 0;
+		transition: ease .6s;
+
+		@for $i from 1 to 10 {
+			&:nth-child(#{$i}) { transition-delay: $i * 0.05s; }
+		}
+	}
+
+	&.aos-animate{
+		.header__link{
+			transform: translateY(0px);
+			opacity: 1;
+		}
+	
+	}
+}
+
+[data-aos="problem-bottom-aos"]{
+
+	&:before{
+		transform: scale(0, 1);
+		transition: ease .3s;
+		transform-origin: 0% 50%;
+	}
+
+	&.aos-animate{
+		&:before{	
+			transform: scale(1, 1);
+		}
+	}
+}

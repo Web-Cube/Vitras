@@ -1,18 +1,32 @@
-+b.main
++b.main(data-aos="main-aos")
 	include header
 	+e.wrap.wrap
 		+e.center.flex
 			+e.left
-				+e.title.h1 Расчет Каско
+				+e.title.h1 
+					span.line
+						span.word Расчет&nbsp;
+					span.line
+						span.word Каско&nbsp;
 				+e.desc 
-					| в 15+ страховых 
-					br
-					| компаниях за 2 минуты
-				+e.A.btn.btn._big._fill(href="/kviz.html") Онлайн-расчет
+					span.line
+						span.word в&nbsp;
+						span.word 15+&nbsp;
+						span.word страховых&nbsp;
+					span.line
+						span.word компаниях&nbsp;
+						span.word за&nbsp;
+						span.word 2&nbsp;
+						span.word минуты&nbsp;
+				.magnetic-wrapper
+					.magnetic-inner
+						+e.A.btn.btn__._big._fill.css-totop(href="/kviz.html") 
+							+e.SPAN.back.js-circles
+							+e.SPAN.text Онлайн-расчет
 			+e.right
-				+e.percent-back 50%
+				+e.percent-back.css-fade 50%
 				+e.IMG.car(src="/img/main__car.png")
-				+e.box.flex._vertical._center
+				+e.box.flex._vertical._center.css-totop
 					+e.box-wrap
 						+e.box-text Скидки до
 						+e.box-percent 50%
@@ -20,36 +34,49 @@
 			+e.list.flex
 				+e.list-item
 					+e.list-wrap
-						+e.list-icon
+						+e.list-icon.css-totop
 							+icon('imac','0 0 38 34')
 						+e.list-text
-							+e.SPAN.list-number 1
-							| Расчет в 15 страховых
-							br
-							| компаниях
+							+e.SPAN.list-number.css-fade 1
+							span.line
+								span.word Расчет&nbsp;
+								span.word в&nbsp;
+								span.word 15&nbsp;
+								span.word страховых&nbsp;
+							span.line
+								span.word компаниях&nbsp;
 				+e.list-item
 					+e.list-wrap
-						+e.list-icon
+						+e.list-icon.css-totop
 							+icon('file','0 0 27 34')
 						+e.list-text
-							+e.SPAN.list-number 2
-							| Оформление
-							br
-							| за 5 минут
+							+e.SPAN.list-number.css-fade 2
+							span.line
+								span.word Оформление&nbsp;
+							span.line
+								span.word за&nbsp;
+								span.word 5&nbsp;
+								span.word минут&nbsp;
 				+e.list-item
 					+e.list-wrap
-						+e.list-icon
+						+e.list-icon.css-totop
 							+icon('clock','0 0 36 36')
 						+e.list-text
-							+e.SPAN.list-number 3
-							| Доставка полиса
-							br
-							| за 3 часа
+							+e.SPAN.list-number.css-fade 3
+							span.line
+								span.word Доставка&nbsp;
+								span.word полиса&nbsp;
+							span.line
+								span.word за&nbsp;
+								span.word 3&nbsp;
+								span.word часа&nbsp;
 		+e.mobile
 			+e.mobile-title.h1 Каско
 			+e.mobile-desc 
 				| От 15 страховых компаний
-			+e.A.mobile-btn.btn._big._fill(href="/kviz.html") Онлайн-расчет за 2 мин
+			+e.A.mobile-btn.btn__._big._fill(href="/kviz.html") 
+				+e.SPAN.back.js-circles
+				+e.SPAN.text Онлайн-расчет за 2 мин
 			+e.mobile-car
 				img(src="/img/main__car_mobile.png")
 			+e.mobile-list

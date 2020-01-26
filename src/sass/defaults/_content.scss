@@ -26,7 +26,8 @@
 
 .h1, .content h1{
 	font-size: 80rem;
-	line-height: (82/80)*1;
+	// line-height: (82/80)*1;
+	line-height: 82rem;
 }
 
 .h2, .content h2{
@@ -53,7 +54,14 @@
 .h6, .content h6{
 }	
 
+@include max-screen($large_desktop) {
+	.h1, .content h1{
+		font-size: 70rem;
+	}
+}
+
 @include max-screen($large_mobile) {
+
 	.h2, .content h2{
 		font-size: 26px;
 		line-height: 30px;

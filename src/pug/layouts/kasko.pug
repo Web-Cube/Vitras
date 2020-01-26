@@ -1,15 +1,30 @@
-+b.kasko#kasko
++b.kasko#kasko(data-aos="kasko")
 	+e.wrap.wrap
 		+e.content
-			+e.H2.title.h1 КАСКО на BMW x5
-			+e.desc Выберите свой вариант
+			+e.H2.title.h1 
+				span.line.is-center
+					span.word КАСКО&nbsp;
+					span.word на&nbsp;
+					span.word BMW&nbsp;
+					span.word x5&nbsp;
+			+e.desc 
+				span.line.is-center
+					span.word Выберите&nbsp;
+					span.word свой&nbsp;
+					span.word вариант&nbsp;
 			+e.buttons.flex_center
-				+e.A.btn.btn__._big._fill(href="/kviz.html")
-					| Новый полис
-					+e.icon-docs
-						+icon('docs','0 0 27 32')
-				+e.A.btn.btn__._big._stroke(href="/prolongation.html")
-					| Продление
-					+e.icon-restore
-						+icon('restore','0 0 33 33')
+				.magnetic-wrapper.css-fade
+					.magnetic-inner
+						+e.A.btn.btn__._big._fill(href="/kviz.html")
+							+e.SPAN.back.js-circles
+							+e.SPAN.text Новый полис
+							+e.icon-docs
+								+icon('docs','0 0 27 32')
+				.magnetic-wrapper.css-fade
+					.magnetic-inner
+						+e.A.btn.btn__._big._stroke(href="/prolongation.html")
+							+e.SPAN.back.js-circles
+							+e.SPAN.text Продление
+							+e.icon-restore
+								+icon('restore','0 0 33 33')
 			+e.IMG.cars(src="/img/kasko__img.png")

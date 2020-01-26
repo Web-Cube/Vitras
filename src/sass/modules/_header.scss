@@ -1,5 +1,11 @@
 .header {
 	border-bottom: 1px solid rgba(10,10,10,0.1);
+
+	.magnetic-wrapper{
+		padding: 10px;
+		margin: -10px;
+	}
+
 	&__logo {
 		position: absolute;
 		right: 100%;
@@ -59,8 +65,12 @@
 		position: absolute;
 		left: 100%;
 		margin-left: 18rem;
-		width: 100%;
-		max-width: 190rem;
+		max-width: 100%;
+		width: 190rem;
+
+		@include max-screen($large_desktop) {
+			margin-left: 32rem;
+		}
 	}
 	&__burger {
 		width: 22px;
@@ -139,7 +149,9 @@
 			margin-right: 30px;
 		}
 		&__btn {
-			position: static;
+			// position: static;
+			position: relative;
+			left: auto;
 		}
 		&__call {
 			width: 40%;

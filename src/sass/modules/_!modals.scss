@@ -19,6 +19,11 @@
 	cursor: auto!important;	
 	font-size: 15rem;
 	border-radius: 20px;
+
+	.magnetic-wrapper{
+		width: calc(100% + 60px);
+	}
+
 	&__close{
 		cursor: pointer;
 		position: absolute;

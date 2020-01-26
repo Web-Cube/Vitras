@@ -18,6 +18,10 @@
 	&__desc {
 		font-size: 35rem;
 		margin-bottom: 90rem;
+
+		@include max-screen($large_desktop) {
+			font-size: 25rem;
+		}
 	}
 	&__item {
 		display: flex;
@@ -68,6 +72,16 @@
 		.gmnoprint, .gm-svpc {
 			display: none;
 		}
+
+		@include max-screen($large_desktop) {
+			&-wrap{
+				margin: auto;
+				width: 550rem;
+			}
+			&-img{
+				height: 530rem;
+			}
+		}
 	}
 	&__bottom {
 		border-top: 1px solid rgba(255,255,255,0.2);
@@ -97,6 +111,10 @@
 	&__nav {
 		display: flex;
 		justify-content: space-between;
+
+		@include max-screen($large_desktop) {
+			justify-content: flex-start;
+		}
 	}
 	&__link {
 		font-weight: 500;
@@ -104,6 +122,10 @@
 		opacity: 0.5;
 		&:hover {
 			opacity: 1;
+		}
+
+		@include max-screen($large_desktop) {
+			margin-right: 5%;
 		}
 	}
 	&__copyright {

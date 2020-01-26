@@ -37,7 +37,11 @@
 							+e.form-col
 								+e.INPUT.form-input.input._big(type="tel",name="phone",placeholder="+7 (___) ___-__-__")
 							+e.form-col
-								+e.BUTTON.form-btn.btn._big._stroke(type="submit",name="prolongation") Продлить КАСКО
+								.magnetic-wrapper
+									.magnetic-inner
+										+e.BUTTON.form-btn.btn__._big._stroke(type="submit",name="prolongation") 
+											+e.SPAN.back.js-circles
+											+e.SPAN.text Продлить КАСКО
 				+e.step
 					+e.thancks
 						+e.thancks-icon

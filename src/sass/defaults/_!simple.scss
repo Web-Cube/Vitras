@@ -12,6 +12,8 @@
 	z-index: 15;
 	margin: auto;
 	position: relative;
+
+
 }
 
 html{
@@ -24,8 +26,12 @@ html, body{
 	
 	font-size: 1px; // 1rem = 1px 
 
-	@include max-screen($small_desktop) {
+	@include max-screen($large_desktop) {
 		font-size: 0.85px;
+	}
+
+	@include max-screen($small_desktop) {
+		font-size: 0.75px;
 	}
 
 }
@@ -182,4 +188,11 @@ img, svg{
 	// &::-webkit-scrollbar-thumb:hover {
 	// 	background: #555; 
 	// }	
+}
+
+.magnetic-wrapper{
+	position: relative;
+	margin: -30px;
+	padding: 30px;
+	display: inline-block;
 }

@@ -128,8 +128,8 @@
 			margin-top: 30rem;
 		}
 		&-btn {
-			width: 100%;
-			max-width: 280rem;
+			max-width: 100%;
+			width: 280rem;
 			margin-top: 50rem;
 		}
 		&-mobile {
@@ -148,6 +148,10 @@
         -webkit-text-stroke: 2px rgba(18,17,52,0.3);
 		font-weight: bold;
 		line-height: 0.75;
+
+		@include max-screen($large_desktop) {
+			font-size: 295rem;
+		}
 	}
 }
 

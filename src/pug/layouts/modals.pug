@@ -6,7 +6,11 @@
 				+e.INPUT.input.input.input_big(name="name",placeholder="Ваше имя")
 			+e.field
 				+e.INPUT.input.input.input_big(name="phone",type="tel",placeholder="+7 (___) ___-__-__")
-			+e.BUTTON.btn.btn._stroke._big(type="submit",name="recall") Отправить заявку
+			.magnetic-wrapper
+				.magnetic-inner
+					+e.BUTTON.btn.btn__._stroke._big(type="submit", name="recall") 
+						+e.SPAN.back.js-circles
+						+e.SPAN.text Отправить заявку
 	+e.thancks
 		+e.thancks-wrap
 			+e.thancks-icon

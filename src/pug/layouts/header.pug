@@ -1,6 +1,6 @@
-+b.HEADER.header
++b.HEADER.header(data-aos="header-aos")
 	+e.wrap.wrap.flex._vertical._justify
-		+e.A.logo(href="/main.html")
+		+e.A.logo.css-fade(href="/main.html")
 			+e.logo-pic.js-svg(data-svg-src="/app/objects/w_logo.svg")
 			+e.SPAN.logo-text страхование
 		+e.NAV.nav.flex
@@ -9,9 +9,13 @@
 			+e.A.link.js-scroll-to(href="#car") Машина
 			+e.A.link.js-scroll-to(href="#kasko") Каско
 			+e.A.link.js-scroll-to(href="#contact") Контакты
-		+e.call.flex_vertical
+		+e.call.flex_vertical.css-fade
 			+e.A.phone(href="tel:+7 (812) 770-22-65") +7 (812) 770-22-65
-			+e.A.btn.btn._stroke._small.js-modal(href="#recall") заказать звонок
+			.magnetic-wrapper
+				.magnetic-inner
+					+e.A.btn.btn__._stroke._small.js-modal(href="#recall") 
+						+e.SPAN.back.js-circles
+						+e.SPAN.text заказать звонок
 		+e.burger
 			+e.burger-line
 			+e.burger-line
@@ -24,4 +28,8 @@
 			+e.A.mobile-link.js-scroll-to(href="#kasko") Каско
 			+e.A.mobile-link.js-scroll-to(href="#contact") Контакты
 		+e.A.mobile-phone(href="tel:+7 (812) 770-22-65") +7 (812) 770-22-65
-		+e.A.mobile-btn.btn._fill._small.js-modal(href="#recall") заказать звонок
+		.magnetic-wrapper
+			.magnetic-inner
+				+e.A.mobile-btn.btn__._fill._small.js-modal(href="#recall") 
+					+e.SPAN.back.js-circles
+					+e.SPAN.text заказать звонок

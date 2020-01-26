@@ -1,13 +1,18 @@
 +b.problem
 	+e.wrap.wrap
-		+e.head.flex._justify._end
+		+e.head.flex._justify._end(data-aos="problem-top-aos")
 			+e.H2.title.h2
-				| Неожиданные проблемы 
-				br
-				| обычно появляются 
-				br
-				| после покупки полиса
-			+e.desc
+				span.line
+					span.word Неожиданные&nbsp;
+					span.word проблемы&nbsp;
+				span.line
+					span.word обычно&nbsp;
+					span.word появляются&nbsp;
+				span.line
+					span.word после&nbsp;
+					span.word покупки&nbsp;
+					span.word полиса&nbsp;
+			+e.desc.css-fade
 				+e.desc-icon
 					+icon('att','0 0 39.97 36')
 				+e.desc-text
@@ -20,51 +25,65 @@
 			+e.text С ними сталкиваются 78% покупателей
 		+e.list.flex_justify
 			+e.item(style="background-image:url(/app/img/problem1.jpg)")
-				+e.item-content
+				+e.item-content(data-aos="problem-bottom-aos" data-offset="0")
 					+e.H3.item-title.h3
-						| Переплата до 50.000 р.
-					+e.P.item-desc.p
+						span.line
+							span.word Переплата&nbsp;
+							span.word до&nbsp;
+							span.word 50.000 р.&nbsp;
+					+e.P.item-desc.p.css-fade
 						| За лишние опции, которые 
 						br
 						| Вам не нужны
 			+e.item(style="background-image:url(/app/img/problem2.jpg)")
-				+e.item-content
+				+e.item-content(data-aos="problem-bottom-aos" data-offset="0")
 					+e.H3.item-title.h3
-						| Некачественый ремонт
-					+e.P.item-desc.p
+						span.line
+							span.word Некачественый&nbsp;
+							span.word ремонт&nbsp;
+					+e.P.item-desc.p.css-fade
 						| Б/У запчасти, сомнительные станции ремонта, бесконечные согласования между страховой компанией и дилером
 			+e.item(style="background-image:url(/app/img/problem3.jpg)")
-				+e.item-content
+				+e.item-content(data-aos="problem-bottom-aos" data-offset="0")
 					+e.H3.item-title.h3
-						| Отказ от выплаты
-					+e.P.item-desc.p
+						span.line
+							span.word Отказ&nbsp;
+							span.word от&nbsp;
+							span.word выплаты&nbsp;
+					+e.P.item-desc.p.css-fade
 						| Из-за скрытых условий 
 						br
 						| договора страхования
-		+e.bottom.flex
+
+		+e.bottom.flex(data-aos="vantage-aos")
 			+e.bottom-item._left
 				+e.bottom-bg._left(style="background-image:url(/app/img/dislike__img.jpg)")
 				+e.bottom-content
-					+e.bottom-icon
+					+e.bottom-icon.css-totop
 						+icon('dislike','0 0 48 40')
 					+e.H2.bottom-title.h2
-						| Выбор КАСКО 
-						br
-						| самостоятельно
-					+e.bottom-desc
+						span.line
+							span.word Выбор&nbsp; 
+							span.word КАСКО&nbsp;
+						span.line
+							span.word самостоятельно&nbsp;
+					+e.bottom-desc.css-totop
 						| Навязанные опции и риск не учесть 
 						br
 						| скрытые условия договора
 			+e.bottom-item._right
 				+e.bottom-bg._right(style="background-image:url(/app/img/like__img.jpg)")
 				+e.bottom-content
-					+e.bottom-icon
+					+e.bottom-icon.css-totop
 						+icon('like','0 0 48 40')
 					+e.H2.bottom-title.h2
-						| Подбор КАСКО 
-						br
-						| с Veritas
-					+e.bottom-desc
+						span.line
+							span.word Подбор&nbsp;
+							span.word КАСКО&nbsp;
+						span.line
+							span.word с&nbsp;
+							span.word Veritas&nbsp;
+					+e.bottom-desc.css-totop
 						| Всегда только те опции в КАСКО, 
 						br
 						| которые подходят именно Вам
